@@ -1,5 +1,3 @@
-// File: src/app/api/register/route.ts
-
 import { NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
 
