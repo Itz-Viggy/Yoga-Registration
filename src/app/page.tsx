@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function HomePage() {
@@ -13,7 +14,7 @@ export default function HomePage() {
     <main className="w-screen h-screen flex flex-col md:flex-row overflow-hidden">
       {/* Left: Flyer (fills left half on md+, full width on smaller) */}
       <div className="relative w-full md:w-1/2 h-64 md:h-full bg-stone-800 flex items-center justify-center">
-        <img
+        <Image
           src="/flyer.jpeg"
           alt="Flyer"
           className="h-full w-full object-contain md:object-scale-down p-2"
