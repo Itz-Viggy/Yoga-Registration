@@ -17,7 +17,8 @@ export default function HomePage() {
         <Image
           src="/flyer.jpeg"
           alt="Flyer"
-          className="h-full w-full object-contain md:object-scale-down p-2"
+          fill
+          className="object-contain md:object-scale-down p-2"
         />
       </div>
 
