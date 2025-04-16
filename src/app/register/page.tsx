@@ -60,6 +60,7 @@ export default function RegisterPage() {
             type="text"
             id="name"
             name="name"
+            placeholder="Enter your name"
             required
             value={formData.name}
             onChange={handleChange}
