@@ -35,7 +35,7 @@ export default function HomePage() {
             onClick={handleJoinClick}
             className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
           >
-            Want to Enroll?
+            Want to Enroll for Kayakalpa(KK)?
           </button>
         </div>
       </div>

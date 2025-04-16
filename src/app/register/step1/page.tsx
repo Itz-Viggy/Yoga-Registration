@@ -28,7 +28,7 @@ export default function Step1Page() {
           <span className="font-bold">Please remember to add a message</span>
         </p>
         <p className="text-amber-200  font-bold mb-4">
-          "Name-Women’s KK Batch2" during the Zelle transfer.
+          "Name-Women’s KK Batch" during the Zelle transfer.
         </p>
         <p className="text-amber-200 mb-6">
           Once done, proceed to next step.
