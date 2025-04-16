@@ -24,7 +24,7 @@ export default function Step2Page() {
           Please download the waiver form by clicking the button below.
         </p>
         <a
-          href="/waiver.pdf"
+          href="/Waiver.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors mb-6"
