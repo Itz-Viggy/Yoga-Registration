@@ -16,7 +16,7 @@ export default function Step2Page() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-stone-800 p-4">
-      <div className="max-w-md w-full bg-stone-700 p-8 rounded-xl shadow-lg text-center">
+      <div className="max-w-md w-full bg-stone-700 p-8  rounded-xl shadow-lg text-center">
         <h2 className="text-2xl font-bold text-white mb-6">
           Step 2: Download the Waiver Form
         </h2>
