@@ -6,7 +6,7 @@ import StateDropdown from "@/components/statesdropdown"; // Ensure this componen
 
 export default function RegisterPage() {
   const router = useRouter();
-  const [formData, setFormData] = useState({ name: "", state: "", phone: "" });
+  const [formData, setFormData] = useState({ name: "", state: "", code:"+1", phone: "" });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -34,7 +34,7 @@ export default function RegisterPage() {
       if (!res.ok) {
         throw new Error("Failed to save data");
       }
-      // Proceed to the next step of registration
+      
       router.push("/register/step1");
     } catch (err: any) {
       setError(err.message);
@@ -64,7 +64,7 @@ export default function RegisterPage() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full border border-amber-700 p-2 rounded"
+            className="w-full border border-amber-700 p-2 rounded text-amber-200"
           />
         </div>
         <div className="mb-4">
@@ -78,24 +78,33 @@ export default function RegisterPage() {
             />
         </div>
         <div className="mb-4">
-          <label htmlFor="phone" className="block text-amber-200 mb-1">
-            Phone Number
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            required
-            pattern="\d{10}"
-            value={formData.phone}
-            onChange={handleChange}
-            className="w-full border border-amber-700 p-2 rounded"
-            placeholder="1234567890"
-          />
-          <p className="text-xs text-amber-200 mt-1">
-            Enter a 10-digit phone number.
-          </p>
-        </div>
+  <label className="block text-amber-200 mb-1">Phone Number</label>
+  <div className="flex space-x-2">
+    <select
+      name="code"
+      value={formData.code}
+      onChange={handleChange}
+      className="border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
+    >
+      <option value="+1">+1 (US)</option>
+      <option value="+91">+91 (IN)</option>
+      
+    </select>
+    <input
+      type="tel"
+      name="phone"
+      required
+      pattern="\d{7,10}"
+      value={formData.phone}
+      onChange={handleChange}
+      className="flex-1 border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
+      placeholder="1234567890"
+    />
+  </div>
+  <p className="text-xs text-amber-200 mt-1">
+    Enter your 10 digit phone number.
+  </p>
+</div>
         {error && (
           <p className="text-red-500 text-center mb-4">{error}</p>
         )}
