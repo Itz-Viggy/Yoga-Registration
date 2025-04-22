@@ -10,9 +10,9 @@ const benefits = [
   "It sharpens the memory – Enhances the concentration power.",
   "Keeps away from Alzheimer’s or any brain disorder and helps the brain cells remain active.",
   "It increases lifespan.",
-  "It improves the reproductive system of females:",
-  "  • Regulates menstruation cycles.",
-  "  • Pelvic muscle (which supports the Bladder, Bowel and the Uterus) get strengthened.",
+  "It improves the reproductive system of females",
+  "Regulates menstruation cycles.",
+  "Pelvic muscle (which supports the Bladder, Bowel and the Uterus) get strengthened.",
   "It reduces the ill‑effects of hereditary problems.",
   "Reduces insomnia (inability to sleep) – Enhances sleep quality 😴",
   "We feel rejuvenated as it increases blood circulation throughout the body.",
@@ -60,9 +60,10 @@ export default function HomePage() {
       Be Blessed!
     </p>
 
-    <h2 className="text-3xl md:text-3xl font-extrabold text-center text-white mb-1">
+    <h2 className="text-2xl md:text-3xl font-extrabold text-center text-white mb-1">
       SKY Kayakalpa Yoga (KK)
     </h2>
+    <br />
     <h4 className="text-2xl md:text-4xl font-bold text-white mb-2">
       Program Details
     </h4>
@@ -153,7 +154,7 @@ export default function HomePage() {
         {/* ------------ Bottom row: Benefits ------------ */}
         <section className="w-full bg-stone-800 p-6 md:p-12 overflow-auto">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
-            Benefits
+           KK Benefits
           </h2>
           <ul className="space-y-2 text-amber-200 leading-snug text-base md:text-lg">
             {benefits.map((item, idx) => (
