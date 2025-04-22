@@ -80,7 +80,7 @@ export default function RegisterPage() {
             id="lastname"
             name="lastname"
             placeholder="Enter your last name"
-            required
+            
             value={formData.lastname}
             onChange={handleChange}
             className="w-full border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
