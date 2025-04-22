@@ -79,7 +79,7 @@ export default function RegisterPage() {
             type="text"
             id="lastname"
             name="lastname"
-            placeholder="Enter your last name"
+            placeholder="Enter your last name (Optional)"
             
             value={formData.lastname}
             onChange={handleChange}
