@@ -30,8 +30,8 @@ export default function Step3Page() {
           👉 Send the transaction screenshot.
         </p>
         <p className="text-amber-200 mb-6">
-          Message to the coordinator:{" "}
-          <span className="font-bold">Shanthi +1 (248) 870-7810</span>
+          
+          <span className="font-bold">Coordinator Phone Number avaiable on whatsapp</span>
         </p>
         <div className="flex justify-between">
           <button

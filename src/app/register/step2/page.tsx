@@ -21,7 +21,8 @@ export default function Step2Page() {
           Step 2: Download the Waiver Form
         </h2>
         <p className="text-amber-200 mb-6">
-          Please download the waiver form by clicking the button below.
+          Please print out the waiver form by clicking the button below.
+          
         </p>
         <a
           href="/Waiver.pdf"

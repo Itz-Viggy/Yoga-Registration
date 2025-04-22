@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const benefits = [
-  "It boosts our Immunity System.",
-  "Our nerves get toned up.",
-  "Bringing glow to our skin – Youthfulness can be maintained.",
-  "It sharpens our memory – Enhances the concentration power.",
-  "Keeps us away from Alzheimer’s or any brain disorder and helps the brain cells remain active.",
-  "It increases our lifespan.",
+  "It boosts the Immunity System.",
+  "The nerves get toned up.",
+  "Bringing glow to the skin – Youthfulness can be maintained.",
+  "It sharpens the memory – Enhances the concentration power.",
+  "Keeps away from Alzheimer’s or any brain disorder and helps the brain cells remain active.",
+  "It increases lifespan.",
   "It improves the reproductive system of females:",
   "  • Regulates menstruation cycles.",
   "  • Pelvic muscle (which supports the Bladder, Bowel and the Uterus) get strengthened.",
@@ -61,7 +61,7 @@ export default function HomePage() {
     </p>
 
     <h2 className="text-3xl md:text-3xl font-extrabold text-center text-white mb-1">
-      Sky Kayakalpa Yoga (KK)
+      SKY Kayakalpa Yoga (KK)
     </h2>
     <h4 className="text-2xl md:text-4xl font-bold text-white mb-2">
       Program Details
