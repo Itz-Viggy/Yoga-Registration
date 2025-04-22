@@ -31,7 +31,7 @@ export default function Step1Page() {
           "Name-Women’s KK Batch" during the Zelle transfer.
         </p>
         <p className="text-amber-200 mb-6">
-          Once done, proceed to next step.
+          
         </p>
         <button
           onClick={handleNext}
