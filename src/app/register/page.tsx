@@ -35,7 +35,7 @@ export default function RegisterPage() {
         body: JSON.stringify(formData),
       });
       if (!res.ok) throw new Error("Failed to save data");
-      router.push("/register/step1");
+      router.push("/");
     } catch (err: any) {
       setError(err.message);
     } finally {
