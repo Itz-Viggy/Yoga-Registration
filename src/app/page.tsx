@@ -126,21 +126,28 @@ export default function HomePage() {
 
           {/* ---------- Welcome Modal ---------- */}
           <section className="w-full md:w-1/2 bg-stone-800 p-6 flex items-center justify-center">
-            <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Welcome!
-              </h3>
-              <p className="text-amber-200 mb-6 text-sm md:text-base">
-                Join us for an exclusive yoga experience.
-              </p>
-              <button
-                onClick={handleJoinClick}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
-              >
-                Want to Enroll for Kayakalpa (KK)?
-              </button>
-            </div>
-          </section>
+  <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center space-y-4">
+    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+      Welcome!
+    </h3>
+    <p className="text-amber-200 mb-4 text-sm md:text-base">
+      Join us for an exclusive yoga experience.
+    </p>
+    <button
+      onClick={handleJoinClick}
+      className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+    >
+      Want to Enroll for Kayakalpa (KK)?
+    </button>
+    <button
+      onClick={() => router.push("/register/step1")}
+      className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-stone-500 transition-colors text-sm md:text-base"
+    >
+      Already Registered? Pay Now
+    </button>
+  </div>
+</section>
+
         </div>
 
         {/* ------------ Bottom row: Benefits ------------ */}
