@@ -99,7 +99,7 @@ export default function HomePage() {
 
     <h3 className="text-2xl font-bold text-white mt-4">Contact</h3>
     <p>
-      A/N Meenaa Puviarasu —{" "}
+      A/N Meena Puviarasu —{" "}
       <a
         href="tel:+17044880552"
         className="underline hover:text-white"
