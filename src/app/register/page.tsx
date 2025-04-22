@@ -35,7 +35,7 @@ export default function RegisterPage() {
         body: JSON.stringify(formData),
       });
       if (!res.ok) throw new Error("Failed to save data");
-      router.push("/");
+      router.push("/register/step1");
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -64,6 +64,8 @@ export default function RegisterPage() {
             name="firstname"
             placeholder="Enter your first name"
             required
+            pattern="^[A-Za-z]+$"
+            title="First name should contain letters only"
             value={formData.firstname}
             onChange={handleChange}
             className="w-full border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
@@ -73,14 +75,15 @@ export default function RegisterPage() {
         {/* Last Name */}
         <div className="mb-4">
           <label htmlFor="lastname" className="block text-amber-200 mb-1">
-            Last Name
+            Last Name <span className="text-amber-200">(Optional)</span>
           </label>
           <input
             type="text"
             id="lastname"
             name="lastname"
-            placeholder="Enter your last name (Optional)"
-            
+            placeholder="Enter your last name"
+            pattern="^[A-Za-z]*$"
+            title="Last name should contain letters only"
             value={formData.lastname}
             onChange={handleChange}
             className="w-full border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
@@ -116,7 +119,8 @@ export default function RegisterPage() {
               type="tel"
               name="phone"
               required
-              pattern="\d{7,10}"
+              pattern="^\d{7,10}$"
+              title="Phone number must be 10 digits"
               value={formData.phone}
               onChange={handleChange}
               className="flex-1 border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
@@ -124,7 +128,7 @@ export default function RegisterPage() {
             />
           </div>
           <p className="text-xs text-amber-200 mt-1">
-            Enter your 7–10 digit phone number.
+            Enter your 10 digit phone number.
           </p>
         </div>
 
