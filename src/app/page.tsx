@@ -54,64 +54,75 @@ export default function HomePage() {
         <div className="flex flex-col md:flex-row flex-1">
           {/* ---------- Program Details ---------- */}
           <section className="w-full md:w-1/2 bg-stone-800 p-6 md:p-12 overflow-auto">
-            <div className="mb-8 text-amber-200 space-y-1 text-base md:text-lg">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2">
-                Program Details
-              </h2>
+  <div className="mb-8 text-amber-200 space-y-1 text-base md:text-lg">
+    {/* Moved to top */}
+    <p className="text-center text-amber-200 text-xl font-semibold mb-4">
+      Be Blessed!
+    </p>
 
-              <p>
-                Where: <span className="font-semibold">Zoom</span>
-              </p>
-              <p>
-                Time: <span className="font-semibold">Sat (8–9:30 am) EST</span>
-              </p>
-              <p>
-                Course Fee: <span className="font-semibold">$35</span>
-              </p>
+    <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2">
+      Sky Kayakalpa Yoga (KK)
+    </h2>
+    <h4 className="text-3xl md:text-4xl font-bold text-white mb-2">
+      Program Details
+    </h4>
+    <p>
+      When: <span className="font-semibold">10th & 17th May</span>
+    </p>
+    <p>
+      Where: <span className="font-semibold">Zoom</span>
+    </p>
+    <p>
+      Time: <span className="font-semibold">Sat (8–9:30 am) EST</span>
+    </p>
+    <p>
+      Course Fee: <span className="font-semibold">$35</span>
+    </p>
 
-              {/* bullet list with the same arrow style used in Benefits */}
-              <ul className="space-y-1">
-                {[
-                  "Only for Women’s group",
-                  "Two weekend interactive classes & 7 mins practices every day",
-                ].map((item) => (
-                  <li key={item} className="flex items-start">
-                    <span className="mr-2">👉</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+    <ul className="space-y-1">
+      {[
+        "Only for Women’s group",
+        "Two weekend interactive classes & 7 mins practices every day",
+      ].map((item) => (
+        <li key={item} className="flex items-start">
+          <span className="mr-2">👉</span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
 
-              <h3 className="text-2xl font-bold text-white mt-4">
-                Daily Practice
-              </h3>
-              <p>3 minutes in the morning</p>
-              <p>3 minutes in the evening</p>
-              <p>1 minute at bedtime</p>
+    <h3 className="text-2xl font-bold text-white mt-4">
+      Daily Practice
+    </h3>
+    <p>3 minutes in the morning</p>
+    <p>3 minutes in the evening</p>
+    <p>1 minute at bedtime</p>
 
-              <h3 className="text-2xl font-bold text-white mt-4">Contact</h3>
-              <p>
-                A/N Meenaa Puviarasu —{" "}
-                <a
-                  href="tel:+17044880552"
-                  className="underline hover:text-white"
-                >
-                  (704) 488‑0552
-                </a>
-              </p>
-              <p className="mt-1">
-                🌐 Visit us:{" "}
-                <a
-                  href="https://www.skyna.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-white"
-                >
-                  www.skyna.org
-                </a>
-              </p>
-            </div>
-          </section>
+    <h3 className="text-2xl font-bold text-white mt-4">Contact</h3>
+    <p>
+      A/N Meenaa Puviarasu —{" "}
+      <a
+        href="tel:+17044880552"
+        className="underline hover:text-white"
+      >
+        (704) 488‑0552
+      </a>
+    </p>
+    <p className="mt-1">
+      🌐 Visit us:{" "}
+      <a
+        href="https://www.skyna.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline hover:text-white"
+      >
+        www.skyna.org
+      </a>
+    </p>
+  </div>
+</section>
+
+
 
           {/* ---------- Welcome Modal ---------- */}
           <section className="w-full md:w-1/2 bg-stone-800 p-6 flex items-center justify-center">
