@@ -61,7 +61,7 @@ export default function HomePage() {
     </p>
 
     <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2">
-      Sky Kayakalpa Yoga (KK)
+      Sky Kayakalpa Yoga(KK)
     </h2>
     <h4 className="text-3xl md:text-4xl font-bold text-white mb-2">
       Program Details
