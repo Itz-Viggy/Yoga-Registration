@@ -43,6 +43,10 @@ export default function RegisterPage() {
     }
   };
 
+  const handleBack = () => {
+    router.push("/");
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-stone-800">
       <form
@@ -136,14 +140,24 @@ export default function RegisterPage() {
           <p className="text-red-500 text-center mb-4">{error}</p>
         )}
 
-        {/* Submit Button */}
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
-        >
-          {loading ? "Submitting..." : "Submit"}
-        </button>
+<div className="space-y-3">
+  <button
+    type="submit"
+    disabled={loading}
+    className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+  >
+    {loading ? "Submitting..." : "Submit"}
+  </button>
+  <button
+    type="button"
+    onClick={handleBack}
+    className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+  >
+    Back
+  </button>
+</div>
+
+        
       </form>
     </div>
   );
