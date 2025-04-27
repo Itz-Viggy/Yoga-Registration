@@ -44,7 +44,7 @@ export default function Step3Page() {
             onClick={handleNext}
             className="w-1/2 ml-2 py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
           >
-            Next
+            Done
           </button>
         </div>
       </div>
