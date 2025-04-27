@@ -144,6 +144,12 @@ export default function HomePage() {
     >
       Already Enrolled? Payment Steps
     </button>
+    <button
+      onClick={() => router.push("/review")}
+      className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-stone-500 transition-colors text-sm md:text-base"
+    >
+      Want to review Us?
+    </button>
   </div>
 </section>
 
