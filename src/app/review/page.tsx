@@ -41,7 +41,9 @@ export default function FeedbackPage() {
       setLoading(false);
     }
   };
-
+  const handleBack = () => {
+    router.push("/");
+  };
   return (
     <div className="min-h-screen flex items-center justify-center bg-stone-800 p-4">
       <form
@@ -148,6 +150,13 @@ export default function FeedbackPage() {
         >
           {loading ? "Submitting..." : "Submit Feedback"}
         </button>
+        <button
+    type="button"
+    onClick={handleBack}
+    className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+  >
+    Back
+  </button>
       </form>
     </div>
   );
