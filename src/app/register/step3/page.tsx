@@ -21,7 +21,7 @@ export default function Step3Page() {
           Step 3: Send Waiver Form and Payment Screenshot
         </h2>
         <p className="text-amber-200 mb-4">
-          Please do the following steps and send them to Volunteer Shanthi:
+          Please do the following steps and send them to Volunteer phone number:
         </p>
         <p className="text-amber-200 mb-2">
           👉 Fill out the waiver form
