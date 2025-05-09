@@ -31,7 +31,7 @@ export default function Step3Page() {
         </p>
         <p className="text-amber-200 mb-6">
           
-          <span className="font-bold">Coordinator Phone Number avaiable on whatsapp group description</span>
+          <span className="font-bold">Volunteer Phone Number avaiable on whatsapp group description</span>
         </p>
         <div className="flex justify-between">
           <button
