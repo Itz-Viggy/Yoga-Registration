@@ -42,7 +42,7 @@ export default function HomePage() {
           </button>
           <button
             onClick={handlePEClick}
-            className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-stone-500 transition-colors text-sm md:text-base"
+            className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
           >
             Physical Exercise
           </button>
