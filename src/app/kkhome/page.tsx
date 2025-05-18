@@ -139,7 +139,7 @@ export default function HomePage() {
                   onClick={() => router.push("/register/step1")}
                   className="flex-1 py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
                 >
-                  Enrolled?
+                  Payment Steps
                 </button>
                 <button
                   onClick={() => router.push("/Waiver.pdf")}
