@@ -32,7 +32,7 @@ export default function HomePage() {
             Welcome!
           </h3>
           <p className="text-amber-200 mb-4 text-sm md:text-base">
-            Upcoming Programs:
+            SKY YOGA:
           </p>
           <button
             onClick={handleKKClick}
