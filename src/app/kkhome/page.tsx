@@ -105,9 +105,7 @@ export default function HomePage() {
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 
               </h3>
-              <p className="text-amber-200 mb-4 text-sm md:text-base">
-                Join us for an exclusive yoga experience.
-              </p>
+              
               <button
                 onClick={handleJoinClick}
                 className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"

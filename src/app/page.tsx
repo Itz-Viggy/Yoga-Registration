@@ -21,7 +21,8 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-2xl font-bold text-white text-center">
-          SKY Yoga
+           Vethathiri Maharishi<br />
+           SKY Yoga
         </h1>
       </header>
 
@@ -36,7 +37,11 @@ export default function HomePage() {
             </h3>
 
             <p className="text-amber-200 mb-4 text-sm md:text-base">
-              Upcoming Programs:
+                Join us for an exclusive yoga experience.
+              </p>
+
+            <p className="text-amber-200 mb-4 text-sm md:text-base">
+              Upcoming SKY Programs:
             </p>
             
             {/* Two-column layout for program information */}
@@ -107,7 +112,7 @@ export default function HomePage() {
                 </button>
               </div>
             </div>
-            <p className="mt-1">
+            {/*<p className="mt-1">
                 🌐 Visit us:{' '}
                 <a
                   href="https://www.skyna.org"
@@ -116,6 +121,17 @@ export default function HomePage() {
                   className="underline hover:text-white"
                 >
                   www.skyna.org
+                </a>
+              </p>*/}
+              <p className="mt-1">
+                Click here for our {" "}
+                <a
+                  href="https://docs.google.com/document/d/1d-BmCclOnpf-NKeReSs7jxSTij4LKNDAN9PiQGUNMaY/edit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-white"
+                >
+                   Testimonials
                 </a>
               </p>
           </div>
