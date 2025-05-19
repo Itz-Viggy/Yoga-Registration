@@ -21,7 +21,7 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-2xl font-bold text-white text-center">
-          SKY Kayakalpa Yoga
+          SKY Yoga
         </h1>
       </header>
 
@@ -67,7 +67,7 @@ export default function HomePage() {
                   <span className="font-bold">Women's Kayakalpa Practices</span>
                 </p>
                 <p>
-                  When: <span className="font-semibold">TBD</span>
+                  When: <span className="font-semibold">November 2025</span>
                 </p>
                 <p>
                   Where: <span className="font-semibold">Zoom</span>

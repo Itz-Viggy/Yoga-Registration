@@ -61,15 +61,7 @@ export default function HomePage() {
               <h4 className="text-2xl md:text-4xl font-bold text-white mb-2">
                 Program Details
               </h4>
-              <p>
-                When: <span className="font-semibold">10th & 17th May</span>
-              </p>
-              <p>
-                Where: <span className="font-semibold">Zoom</span>
-              </p>
-              <p>
-                Time: <span className="font-semibold">Sat (8–9:30 am) EST</span>
-              </p>
+              
               <p>
                 Course Fee: <span className="font-semibold">$35</span>
               </p>
@@ -103,17 +95,7 @@ export default function HomePage() {
                   (704) 488‑0552
                 </a>
               </p>
-              <p className="mt-1">
-                🌐 Visit us:{' '}
-                <a
-                  href="https://www.skyna.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-white"
-                >
-                  www.skyna.org
-                </a>
-              </p>
+              
             </div>
           </section>
 
@@ -121,7 +103,7 @@ export default function HomePage() {
           <section className="w-full md:w-1/2 bg-stone-800 p-6 flex items-center justify-center">
             <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center space-y-4">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Welcome!
+                
               </h3>
               <p className="text-amber-200 mb-4 text-sm md:text-base">
                 Join us for an exclusive yoga experience.
