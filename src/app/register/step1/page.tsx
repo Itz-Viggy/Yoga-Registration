@@ -8,6 +8,9 @@ export default function Step1Page() {
   const handleNext = () => {
     router.push("/register/step2");
   };
+  const handleBack = () => {
+    router.push("/kkhome"); 
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-stone-800 p-4">
@@ -33,12 +36,21 @@ export default function Step1Page() {
         <p className="text-amber-200 mb-6">
           
         </p>
-        <button
-          onClick={handleNext}
-          className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
-        >
-          Next
-        </button>
+        <div className="flex flex-col space-y-4">
+          <button
+            onClick={handleNext}
+            className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+          >
+            Next
+          </button>
+          <button
+            onClick={handleBack}
+            className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+          >
+            Back
+          </button>
+        </div>
+
       </div>
     </div>
   );
