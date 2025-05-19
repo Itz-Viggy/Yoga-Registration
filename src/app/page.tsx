@@ -28,9 +28,11 @@ export default function HomePage() {
 
       {/* Welcome Modal */}
       <main className="w-screen min-h-[calc(100vh-64px)] bg-stone-800 flex items-center justify-center py-8 md:py-16 px-4 md:px-8">
-        <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center space-y-4 max-h-[90vh] overflow-auto">
+        <div className="flex flex-col items-center w-full max-w-md">
+          {/* <h2 className="text-2xl font-bold text-amber-200 mb-6">Be Blessed</h2> */}
+          <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center space-y-4 max-h-[90vh] overflow-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-            Welcome!
+            Be Blessed!
           </h3>
 
           <p className="text-amber-200 mb-4 text-sm md:text-base">
@@ -74,6 +76,7 @@ export default function HomePage() {
             Physical Exercise
           </button>
         </div>
+      </div>
       </main>
     </>
   );
