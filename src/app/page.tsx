@@ -39,7 +39,17 @@ export default function HomePage() {
             <p className="text-amber-200 mb-4 text-sm md:text-base">
                 Join us for an exclusive yoga experience.
               </p>
-
+              <p className="mt-1 text-amber-200 font-semibold">
+                Click here for our {" "}
+                <a
+                  href="https://docs.google.com/document/d/1d-BmCclOnpf-NKeReSs7jxSTij4LKNDAN9PiQGUNMaY/edit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-white"
+                >
+                   Testimonials
+                </a>
+              </p>
             <p className="text-amber-200 mb-4 text-sm md:text-base">
               Upcoming SKY Programs:
             </p>
@@ -123,17 +133,7 @@ export default function HomePage() {
                   www.skyna.org
                 </a>
               </p>*/}
-              <p className="mt-1">
-                Click here for our {" "}
-                <a
-                  href="https://docs.google.com/document/d/1d-BmCclOnpf-NKeReSs7jxSTij4LKNDAN9PiQGUNMaY/edit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-white"
-                >
-                   Testimonials
-                </a>
-              </p>
+              
           </div>
         </div>
       </main>
