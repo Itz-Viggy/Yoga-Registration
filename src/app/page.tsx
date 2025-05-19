@@ -40,14 +40,34 @@ export default function HomePage() {
             </p>
             
             {/* Two-column layout for program information */}
-            <div className="flex flex-col md:flex-row gap-4 mb-4">
-              {/* Left column - Kayakalpa */}
-              <div className="flex-1 p-3 bg-stone-800 rounded-lg">
+            <div className="flex-1 p-3 bg-stone-800 rounded-lg text-left">
                 <p className="text-amber-200 mb-2 text-sm md:text-base">
-                  <span className="font-bold">SKY Kayakalpa Yoga</span>
+                  <span className="font-bold">Women's Physical Exercise</span>
                 </p>
                 <p>
-                  When: <span className="font-semibold">10th & 17th May</span>
+                  When: <span className="font-semibold">July 15 - August 31 2025</span>
+                </p>
+                <p>
+                  Where: <span className="font-semibold">Zoom</span>
+                </p>
+                <p>
+                  Time: <span className="font-semibold">Sat 8-9:15 AM EST</span>
+                </p>
+                <button
+                  onClick={handlePEClick}
+                  className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                >
+                  Physical Exercise
+                </button>
+              </div>
+            <div className="flex flex-col md:flex-row gap-4 mb-4">
+              {/* Left column - Kayakalpa */}
+              <div className="flex-1 p-3 bg-stone-800 rounded-lg text-left">
+                <p className="text-amber-200 mb-2 text-sm md:text-base">
+                  <span className="font-bold">Women's Kayakalpa Practices</span>
+                </p>
+                <p>
+                  When: <span className="font-semibold">TBD</span>
                 </p>
                 <p>
                   Where: <span className="font-semibold">Zoom</span>
@@ -59,44 +79,25 @@ export default function HomePage() {
                   onClick={handleKKClick}
                   className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
                 >
-                  Kayakalpa
+                  Kayakalpa Practices
                 </button>
               </div>
               
               {/* Right column - Physical Exercise */}
-              <div className="flex-1 p-3 bg-stone-800 rounded-lg">
-                <p className="text-amber-200 mb-2 text-sm md:text-base">
-                  <span className="font-bold">Physical Exercise (Women)</span>
-                </p>
-                <p>
-                  When: <span className="font-semibold">—</span>
-                </p>
-                <p>
-                  Where: <span className="font-semibold">Zoom</span>
-                </p>
-                <p>
-                  Time: <span className="font-semibold">—</span>
-                </p>
-                <button
-                  onClick={handlePEClick}
-                  className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
-                >
-                  Physical Exercise
-                </button>
-              </div>
+              
 
-              <div className="flex-1 p-3 bg-stone-800 rounded-lg">
+              <div className="flex-1 p-3 bg-stone-800 rounded-lg text-left">
                 <p className="text-amber-200 mb-2 text-sm md:text-base">
-                  <span className="font-bold">Physical Exercise (Men)</span>
+                  <span className="font-bold">Men's Physical Exercise</span>
                 </p>
                 <p>
-                  When: <span className="font-semibold">—</span>
+                  When: <span className="font-semibold">TBD</span>
                 </p>
                 <p>
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
                 <p>
-                  Time: <span className="font-semibold">—</span>
+                  Time: <span className="font-semibold">Sat 9:30 - 10:30 AM EST</span>
                 </p>
                 <button
                   onClick={handlePEClick}
