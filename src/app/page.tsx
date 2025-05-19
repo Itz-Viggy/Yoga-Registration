@@ -31,52 +31,83 @@ export default function HomePage() {
         <div className="flex flex-col items-center w-full max-w-md">
           {/* <h2 className="text-2xl font-bold text-amber-200 mb-6">Be Blessed</h2> */}
           <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center space-y-4 max-h-[90vh] overflow-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-            Be Blessed!
-          </h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+              Be Blessed!
+            </h3>
 
-          <p className="text-amber-200 mb-4 text-sm md:text-base">
-            Upcoming Programs:
-          </p>
-          <p className="text-amber-200 mb-4 text-sm md:text-base">
-            <span className="font-bold">SKY Kayakalpa Yoga</span>
-          </p>
-          <p>
-            When: <span className="font-semibold">10th & 17th May</span>
-          </p>
-          <p>
-            Where: <span className="font-semibold">Zoom</span>
-          </p>
-          <p>
-            Time: <span className="font-semibold">Sat (8–9:30 am) EST</span>
-          </p>
-          <button
-            onClick={handleKKClick}
-            className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
-          >
-            Kayakalpa
-          </button>
+            <p className="text-amber-200 mb-4 text-sm md:text-base">
+              Upcoming Programs:
+            </p>
+            
+            {/* Two-column layout for program information */}
+            <div className="flex flex-col md:flex-row gap-4 mb-4">
+              {/* Left column - Kayakalpa */}
+              <div className="flex-1 p-3 bg-stone-800 rounded-lg">
+                <p className="text-amber-200 mb-2 text-sm md:text-base">
+                  <span className="font-bold">SKY Kayakalpa Yoga</span>
+                </p>
+                <p>
+                  When: <span className="font-semibold">10th & 17th May</span>
+                </p>
+                <p>
+                  Where: <span className="font-semibold">Zoom</span>
+                </p>
+                <p>
+                  Time: <span className="font-semibold">Sat 8–9:30 am EST</span>
+                </p>
+                <button
+                  onClick={handleKKClick}
+                  className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                >
+                  Kayakalpa
+                </button>
+              </div>
+              
+              {/* Right column - Physical Exercise */}
+              <div className="flex-1 p-3 bg-stone-800 rounded-lg">
+                <p className="text-amber-200 mb-2 text-sm md:text-base">
+                  <span className="font-bold">Physical Exercise (Women)</span>
+                </p>
+                <p>
+                  When: <span className="font-semibold">—</span>
+                </p>
+                <p>
+                  Where: <span className="font-semibold">Zoom</span>
+                </p>
+                <p>
+                  Time: <span className="font-semibold">—</span>
+                </p>
+                <button
+                  onClick={handlePEClick}
+                  className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                >
+                  Physical Exercise
+                </button>
+              </div>
 
-          <p className="text-amber-200 mt-6 mb-4 text-sm md:text-base">
-            <span className="font-bold">Physical Exercise</span>
-          </p>
-          <p>
-            When: <span className="font-semibold">—</span>
-          </p>
-          <p>
-            Where: <span className="font-semibold">Zoom</span>
-          </p>
-          <p>
-            Time: <span className="font-semibold">—</span>
-          </p>
-          <button
-            onClick={handlePEClick}
-            className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
-          >
-            Physical Exercise
-          </button>
+              <div className="flex-1 p-3 bg-stone-800 rounded-lg">
+                <p className="text-amber-200 mb-2 text-sm md:text-base">
+                  <span className="font-bold">Physical Exercise (Men)</span>
+                </p>
+                <p>
+                  When: <span className="font-semibold">—</span>
+                </p>
+                <p>
+                  Where: <span className="font-semibold">Zoom</span>
+                </p>
+                <p>
+                  Time: <span className="font-semibold">—</span>
+                </p>
+                <button
+                  onClick={handlePEClick}
+                  className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                >
+                  Physical Exercise
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
       </main>
     </>
   );
