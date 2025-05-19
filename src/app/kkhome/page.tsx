@@ -56,9 +56,7 @@ export default function HomePage() {
           <section className="w-full md:w-1/2 bg-stone-800 p-6 md:p-12 overflow-auto">
             <div className="mb-8 text-amber-200 space-y-1 text-base md:text-lg">
               {/* Moved to top */}
-              <p className="text-center text-amber-200 text-xl font-semibold mb-4">
-                Be Blessed!
-              </p>
+              
 
               <h4 className="text-2xl md:text-4xl font-bold text-white mb-2">
                 Program Details
