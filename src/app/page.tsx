@@ -106,6 +106,17 @@ export default function HomePage() {
                 </button>
               </div>
             </div>
+            <p className="mt-1">
+                🌐 Visit us:{' '}
+                <a
+                  href="https://www.skyna.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-white"
+                >
+                  www.skyna.org
+                </a>
+              </p>
           </div>
         </div>
       </main>
