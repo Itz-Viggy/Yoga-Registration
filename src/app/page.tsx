@@ -50,13 +50,13 @@ export default function HomePage() {
                   <span className="font-bold">Women's Physical Exercise</span>
                 </p>
                 <p>
-                  When: <span className="font-semibold">July 15 - August 31 2025</span>
+                  When: <span className="font-semibold">(July 15 - August 31) 2025</span>
                 </p>
                 <p>
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
                 <p>
-                  Time: <span className="font-semibold">Sat 8-9:15 AM EST</span>
+                  Time: <span className="font-semibold">Sat (8 - 9:15 AM) EST</span>
                 </p>
                 <button
                   onClick={handlePEClick}
@@ -78,7 +78,7 @@ export default function HomePage() {
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
                 <p>
-                  Time: <span className="font-semibold">Sat 8–9:30 am EST</span>
+                  Time: <span className="font-semibold">Sat (8–9:30 AM) EST</span>
                 </p>
                 <button
                   onClick={handleKKClick}
@@ -102,7 +102,7 @@ export default function HomePage() {
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
                 <p>
-                  Time: <span className="font-semibold">Sat 9:30 - 10:30 AM EST</span>
+                  Time: <span className="font-semibold">Sat (9:30 - 10:30 AM) EST</span>
                 </p>
                 <button
                   onClick={handlePEClick}

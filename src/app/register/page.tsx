@@ -44,7 +44,7 @@ export default function RegisterPage() {
   };
 
   const handleBack = () => {
-    router.push("/");
+    router.push("/kkhome");
   };
 
   return (

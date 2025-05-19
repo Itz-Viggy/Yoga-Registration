@@ -54,7 +54,7 @@ export default function HomePage() {
         <div className="flex flex-col md:flex-row flex-1">
           {/* ---------- Program Details ---------- */}
           <section className="w-full md:w-1/2 bg-stone-800 p-6 md:p-12 overflow-auto">
-            <div className="mb-8 text-amber-200 space-y-1 text-base md:text-lg">
+            <div className="text-amber-200 space-y-1 text-base md:text-lg">
               {/* Moved to top */}
               
 
@@ -68,8 +68,9 @@ export default function HomePage() {
 
               <ul className="space-y-1">
                 {[
-                  "Only for Women’s group",
-                  "Two weekend interactive classes & 7 mins practices every day",
+                  "Only for Women's group",
+                  "Two weekend interactive classes",
+                  "7 mins practices every day"
                 ].map((item) => (
                   <li key={item} className="flex items-start">
                     <span className="mr-2">👉</span>
@@ -81,18 +82,18 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-white mt-4">
                 Daily Practice
               </h3>
-              <p>3 minutes in the morning</p>
-              <p>3 minutes in the evening</p>
-              <p>1 minute at bedtime</p>
+              <p>3 minutes in the morning</p>
+              <p>3 minutes in the evening</p>
+              <p>1 minute at bedtime</p>
 
               <h3 className="text-2xl font-bold text-white mt-4">Contact</h3>
               <p>
-                A/N Meena Puviarasu —{' '}
+                A/N Meena Puviarasu —{' '}
                 <a
                   href="tel:+17044880552"
                   className="underline hover:text-white"
                 >
-                  (704) 488‑0552
+                  (704) 488‑0552
                 </a>
               </p>
               
@@ -100,8 +101,8 @@ export default function HomePage() {
           </section>
 
           {/* ---------- Welcome Modal ---------- */}
-          <section className="w-full md:w-1/2 bg-stone-800 p-6 flex items-center justify-center">
-            <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center space-y-4">
+          <section className="w-full md:w-1/2 bg-stone-800 p-4 flex items-center justify-center">
+            <div className="w-full max-w-md bg-stone-700 p-6 rounded-2xl shadow-xl text-center space-y-3">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 
               </h3>
