@@ -24,32 +24,30 @@ export default function HomePage() {
           SKY Kayakalpa Yoga
         </h1>
       </header>
-      <p className="text-center text-amber-200 text-xl font-semibold mb-4">
-                Be Blessed!
-              </p>
+
+
       {/* Welcome Modal */}
       <main className="w-screen min-h-[calc(100vh-64px)] bg-stone-800 flex items-center justify-center py-8 md:py-16 px-4 md:px-8">
         <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center space-y-4 max-h-[90vh] overflow-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
             Welcome!
           </h3>
+
           <p className="text-amber-200 mb-4 text-sm md:text-base">
-            Upcoming Porgrams:
+            Upcoming Programs:
           </p>
           <p className="text-amber-200 mb-4 text-sm md:text-base">
             <span className="font-bold">SKY Kayakalpa Yoga</span>
           </p>
           <p>
-                When: <span className="font-semibold">10th & 17th May</span>
-              </p>
-              <p>
-                Where: <span className="font-semibold">Zoom</span>
-              </p>
-              <p>
-                Time: <span className="font-semibold">Sat (8–9:30 am) EST</span>
-              </p>
-
-
+            When: <span className="font-semibold">10th & 17th May</span>
+          </p>
+          <p>
+            Where: <span className="font-semibold">Zoom</span>
+          </p>
+          <p>
+            Time: <span className="font-semibold">Sat (8–9:30 am) EST</span>
+          </p>
           <button
             onClick={handleKKClick}
             className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
@@ -57,19 +55,18 @@ export default function HomePage() {
             Kayakalpa
           </button>
 
-          <p className="text-amber-200 mb-4 text-sm md:text-base">
+          <p className="text-amber-200 mt-6 mb-4 text-sm md:text-base">
             <span className="font-bold">Physical Exercise</span>
           </p>
-        <p>
-                When: <span className="font-semibold"></span>
-              </p>
-              <p>
-                Where: <span className="font-semibold">Zoom</span>
-              </p>
-              <p>
-                Time: <span className="font-semibold"></span>
-              </p>
-
+          <p>
+            When: <span className="font-semibold">—</span>
+          </p>
+          <p>
+            Where: <span className="font-semibold">Zoom</span>
+          </p>
+          <p>
+            Time: <span className="font-semibold">—</span>
+          </p>
           <button
             onClick={handlePEClick}
             className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
