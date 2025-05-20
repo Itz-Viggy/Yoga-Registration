@@ -59,13 +59,13 @@ export default function HomePage() {
                 <p className="text-amber-200 mb-2 text-sm md:text-base">
                   <span className="font-bold">Women's Physical Exercise</span>
                 </p>
-                <p>
+                <p className="text-white">
                   When: <span className="font-semibold">(July 15 - August 31) 2025</span>
                 </p>
-                <p>
+                <p className="text-white">
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
-                <p>
+                <p className="text-white">
                   Time: <span className="font-semibold">Sat (8 - 9:15 AM) EST</span>
                 </p>
                 <button
@@ -81,13 +81,13 @@ export default function HomePage() {
                 <p className="text-amber-200 mb-2 text-sm md:text-base">
                   <span className="font-bold">Women's Kayakalpa Practices</span>
                 </p>
-                <p>
+                <p className="text-white">
                   When: <span className="font-semibold">November 2025</span>
                 </p>
-                <p>
+                <p className="text-white">
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
-                <p>
+                <p className="text-white">
                   Time: <span className="font-semibold">Sat (8–9:30 AM) EST</span>
                 </p>
                 <button
@@ -105,13 +105,13 @@ export default function HomePage() {
                 <p className="text-amber-200 mb-2 text-sm md:text-base">
                   <span className="font-bold">Men's Physical Exercise</span>
                 </p>
-                <p>
+                <p className="text-white">
                   When: <span className="font-semibold">TBD</span>
                 </p>
-                <p>
+                <p className="text-white">
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
-                <p>
+                <p className="text-white">
                   Time: <span className="font-semibold">Sat (9:30 - 10:30 AM) EST</span>
                 </p>
                 <button
