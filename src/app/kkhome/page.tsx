@@ -86,16 +86,8 @@ export default function HomePage() {
               <p>3 minutes in the evening</p>
               <p>1 minute at bedtime</p>
 
-              <h3 className="text-2xl font-bold text-white mt-4">Contact</h3>
-              <p>
-                A/N Meena Puviarasu —{' '}
-                <a
-                  href="tel:+17044880552"
-                  className="underline hover:text-white"
-                >
-                  (704) 488‑0552
-                </a>
-              </p>
+              
+              
               
             </div>
           </section>
@@ -106,7 +98,12 @@ export default function HomePage() {
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 
               </h3>
-              
+              <button
+                onClick={() => router.push("/")}
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+              >
+                Home
+              </button>
               <button
                 onClick={handleJoinClick}
                 className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
