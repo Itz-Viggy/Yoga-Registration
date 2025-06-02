@@ -35,7 +35,7 @@ export default function HomePage() {
     <>
       {/* Header */}
       <header className="w-full bg-stone-900 py-4 relative">
-        <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
+        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer" onClick={() => router.push("/")}>
           <Image
             src="/Vethathri-Maharishi-1-removebg-preview.png"
             alt="Kayakalpa Logo"
@@ -94,19 +94,26 @@ export default function HomePage() {
 
           {/* ---------- Welcome Modal ---------- */}
           <section className="w-full md:w-1/2 bg-stone-800 p-4 flex items-center justify-center">
-            <div className="w-full max-w-md bg-stone-700 p-6 rounded-2xl shadow-xl text-center space-y-3">
+            <div className="w-full max-w-md bg-stone-700 p-6 rounded-2xl shadow-xl text-center space-y-3 relative">
+              {/* Home icon in top left corner */}
+              <div className="absolute top-2 left-2">
+                <button 
+                  onClick={() => router.push("/")} 
+                  className="p-2 bg-amber-700 hover:bg-amber-600 rounded-full transition-colors"
+                  aria-label="Return to home"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10m-1 5h-1" />
+                  </svg>
+                </button>
+              </div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 
               </h3>
-              <button
-                onClick={() => router.push("/")}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
-              >
-                Home
-              </button>
+              
               <button
                 onClick={handleJoinClick}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base mt-6"
               >
                 Want to Enroll for Kayakalpa (KK)?
               </button>
