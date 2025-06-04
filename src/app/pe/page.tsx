@@ -37,7 +37,6 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-2xl font-bold text-white text-center">
-        Vethathiri Maharishi<br />
         SKY Yoga <br />
         Physical Exercise (PE)
         </h1>
