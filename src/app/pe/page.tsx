@@ -131,10 +131,10 @@ export default function HomePage() {
                 
               </h3>
               <button
-                onClick={() => router.push("/")}
+                onClick={() => window.open("https://docs.google.com/document/d/1BDFD8BxX1OE347HK4KXAno3U8I_pJs44vHswShTd10Q/edit?usp=sharing", "_blank")}
                 className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
               >
-                Home
+                New Joiners Handbook
               </button>
               <button
                 onClick={handleJoinClick}
