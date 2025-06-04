@@ -79,10 +79,45 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-white mt-4">
                 Daily Practice
               </h3>
-              <p>3 minutes in the morning</p>
-              <p>3 minutes in the evening</p>
-              <p>1 minute at bedtime</p>
-
+              <p>The 9 steps practices will take 45 mins of time:</p>
+              <ul className="list-none space-y-1 mt-2">
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>Hand exercises</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>Leg exercises</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>Breathing exercises (Strengthen lungs)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>Eye exercises</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>Kapalabathi (to rejuvenate Brain cells)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>Makarasana (strengthen back)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>Body Massage</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>14 point acupressure (Focus on inner glands)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">✅</span>
+                  <span>Relaxation (total body relaxation)</span>
+                </li>
+              </ul>
               
               
               
