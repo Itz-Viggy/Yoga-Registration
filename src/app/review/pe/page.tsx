@@ -104,6 +104,7 @@ export default function FeedbackPage() {
                 type="radio"
                 name="gender"
                 value="female"
+                required
                 checked={formData.gender === "female"}
                 onChange={handleChange}
                 className="mr-2 text-amber-700 border-amber-700 bg-stone-700"
