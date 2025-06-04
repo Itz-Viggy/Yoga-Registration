@@ -92,7 +92,7 @@ export default function FeedbackPage() {
               <input
                 type="radio"
                 name="gender"
-                value="Women's Group"
+                value="female"
                 checked={formData.gender === "male"}
                 onChange={handleChange}
                 className="mr-2 text-amber-700 border-amber-700 bg-stone-700"
@@ -103,7 +103,7 @@ export default function FeedbackPage() {
               <input
                 type="radio"
                 name="gender"
-                value="Men's Group"
+                value="male"
                 required
                 checked={formData.gender === "female"}
                 onChange={handleChange}
