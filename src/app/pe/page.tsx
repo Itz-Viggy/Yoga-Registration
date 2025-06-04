@@ -76,51 +76,6 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-
-              <h3 className="text-2xl font-bold text-white mt-4">
-                Daily Practice
-              </h3>
-              <p>The 9 steps practices will take 45 mins of time:</p>
-              <ul className="list-none space-y-1 mt-2">
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>Hand exercises</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>Leg exercises</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>Breathing exercises (Strengthen lungs)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>Eye exercises</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>Kapalabathi (to rejuvenate Brain cells)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>Makarasana (strengthen back)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>Body Massage</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>14 point acupressure (Focus on inner glands)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>Relaxation (total body relaxation)</span>
-                </li>
-              </ul>
-              
-              
               
             </div>
           </section>
@@ -169,19 +124,68 @@ export default function HomePage() {
           </section>
         </div>
 
-        {/* ------------ Bottom row: Benefits ------------ */}
+        {/* ------------ Bottom row: Daily Practice and Benefits ------------ */}
         <section className="w-full bg-stone-800 p-6 md:p-12 overflow-auto">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
-           PE Benefits
-          </h2>
-          <ul className="space-y-2 text-amber-200 leading-snug text-base md:text-lg">
-            {benefits.map((item, idx) => (
-              <li key={idx} className="flex items-start">
-                <span className="mr-2">👉</span>
-                <span>{item}</span>
+          {/* Daily Practice */}
+          <div className="mb-8">
+            <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
+              Daily Practice
+            </h3>
+            <p className="text-amber-200 mb-2">The 9 steps practices will take 45 mins of time:</p>
+            <ul className="list-none space-y-2 text-amber-200 leading-snug text-base md:text-lg">
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>Hand exercises</span>
               </li>
-            ))}
-          </ul>
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>Leg exercises</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>Breathing exercises (Strengthen lungs)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>Eye exercises</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>Kapalabathi (to rejuvenate Brain cells)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>Makarasana (strengthen back)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>Body Massage</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>14 point acupressure (Focus on inner glands)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">✅</span>
+                <span>Relaxation (total body relaxation)</span>
+              </li>
+            </ul>
+          </div>
+          
+          {/* PE Benefits */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
+              PE Benefits
+            </h2>
+            <ul className="space-y-2 text-amber-200 leading-snug text-base md:text-lg">
+              {benefits.map((item, idx) => (
+                <li key={idx} className="flex items-start">
+                  <span className="mr-2">👉</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
       </main>
     </>
