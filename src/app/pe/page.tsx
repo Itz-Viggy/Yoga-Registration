@@ -83,7 +83,7 @@ export default function HomePage() {
           <section className="w-full md:w-1/2 bg-stone-800 p-4 flex items-center justify-center">
             <div className="w-full max-w-md bg-stone-700 p-6 rounded-2xl shadow-xl text-center space-y-3 relative">
               {/* Home icon in top left corner */}
-              <div className="absolute top-2 left-2">
+              <div className="absolute top-2 right-2">
                 <button 
                   onClick={() => router.push("/")} 
                   className="p-2 bg-amber-700 hover:bg-amber-600 rounded-full transition-colors"
