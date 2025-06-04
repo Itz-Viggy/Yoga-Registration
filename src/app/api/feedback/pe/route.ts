@@ -6,7 +6,7 @@ import { google } from "googleapis";
 export async function POST(req: NextRequest) {
   try {
     // 1. Parse the incoming feedback fields
-    const { name, likedBest, improvements, rating, suggestions } = await req.json();
+    const { name, gender, likedBest, improvements, rating, suggestions } = await req.json();
 
     // 2. Authenticate using your service account credentials
     const auth = new google.auth.GoogleAuth({
@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
       range: "PE Feedback!A2:E",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[name, likedBest, improvements, rating, suggestions]],
+        values: [[name, gender, likedBest, improvements, rating, suggestions]],
       },
     });
 

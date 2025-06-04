@@ -7,6 +7,7 @@ export default function FeedbackPage() {
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
+    gender: "", // Add gender field
     likedBest: "",
     improvements: "",
     rating: "",
@@ -81,6 +82,35 @@ export default function FeedbackPage() {
             onChange={handleChange}
             className="w-full border border-amber-700 bg-stone-700 text-amber-200 p-2 rounded"
           />
+        </div>
+
+        {/* Gender */}
+        <div>
+          <label className="block text-amber-200 mb-1">Gender</label>
+          <div className="flex space-x-4">
+            <label className="inline-flex items-center">
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                checked={formData.gender === "male"}
+                onChange={handleChange}
+                className="mr-2 text-amber-700 border-amber-700 bg-stone-700"
+              />
+              <span className="text-amber-200">Male</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                checked={formData.gender === "female"}
+                onChange={handleChange}
+                className="mr-2 text-amber-700 border-amber-700 bg-stone-700"
+              />
+              <span className="text-amber-200">Female</span>
+            </label>
+          </div>
         </div>
 
         {/* What did you like best */}
