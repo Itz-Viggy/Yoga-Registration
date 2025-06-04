@@ -45,7 +45,7 @@ export default function PhysicalExercisePage() {
   };
 
   const handleBack = () => {
-    router.push("/");
+    router.push("/pe");
   };
 
   return (
