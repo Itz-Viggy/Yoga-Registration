@@ -28,7 +28,7 @@ export default function FeedbackPage() {
     setError("");
     try {
       // Replace with your actual endpoint
-      const res = await fetch("/api/feedback", {
+      const res = await fetch("/api/feedback/pe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
