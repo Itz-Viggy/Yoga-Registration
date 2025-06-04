@@ -1,182 +1,140 @@
 "use client";
 
-import { useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
-import StateDropdown from "@/components/statesdropdown";
 
-export default function PhysicalExercisePage() {
+const benefits = [
+  "Help in curing diseases",
+  "Prevent certain diseases",
+  "Increase the strength of the body and helps in long life",
+  "Enhance physical appearance",
+  "Remove laziness and keep oneself active",
+  "Strengthen heart, lungs, digestive system, brain and nervous system",
+  "Strengthen eyes and vision becomes good",
+  "Increase the oxygen level in the blood",
+  "Help to reduce excessive sugar in urine and blood",
+  "Improve functioning of the endocrine system",
+  "Help in correcting Uterine and menstrual disorders",
+  "Give good sleep",
+  "Regulate blood pressure",
+  "Help in curing heart ailments",
+];
+
+export default function HomePage() {
   const router = useRouter();
-  const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    state: "",
-    gender: "",
-    code: "+1",
-    phone: ""
-  });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setError("");
-
-    try {
-      const res = await fetch("/api/pe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      if (!res.ok) throw new Error("Failed to save data");
-      router.push("/register/success");
-    } catch (err: any) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleBack = () => {
-    router.push("/");
-  };
+  const handleJoinClick = () => router.push("/register/pe");
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-stone-800">
-      <form
-        onSubmit={handleSubmit}
-        className="max-w-md w-full bg-stone-700 p-8 rounded-xl shadow-lg"
-      >
-        <h2 className="text-2xl font-bold text-white mb-6 text-center">
-          Physical Exercise Registration
-        </h2>
-
-        {/* First Name */}
-        <div className="mb-4">
-          <label htmlFor="firstname" className="block text-amber-200 mb-1">
-            First Name
-          </label>
-          <input
-            type="text"
-            id="firstname"
-            name="firstname"
-            placeholder="Enter your first name"
-            required
-            pattern="^[A-Za-z]+$"
-            title="First name should contain letters only"
-            value={formData.firstname}
-            onChange={handleChange}
-            className="w-full border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
+    <>
+      {/* Header */}
+      <header className="w-full bg-stone-900 py-4 relative">
+        <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
+          <Image
+            src="/Vethathri-Maharishi-1-removebg-preview.png"
+            alt="Kayakalpa Logo"
+            width={48}
+            height={48}
           />
         </div>
+        <h1 className="text-2xl font-bold text-white text-center">
+        Vethathiri Maharishi<br />
+        SKY Yoga
+        </h1>
+      </header>
 
-        {/* Last Name */}
-        <div className="mb-4">
-          <label htmlFor="lastname" className="block text-amber-200 mb-1">
-            Last Name <span className="text-amber-200">(Optional)</span>
-          </label>
-          <input
-            type="text"
-            id="lastname"
-            name="lastname"
-            placeholder="Enter your last name"
-            pattern="^[A-Za-z]*$"
-            title="Last name should contain letters only"
-            value={formData.lastname}
-            onChange={handleChange}
-            className="w-full border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
-          />
+      {/* Main Content */}
+      <main className="w-screen flex flex-col overflow-hidden h-auto md:h-[calc(100vh-64px)]">
+        {/* ------------ Top row ------------ */}
+        <div className="flex flex-col md:flex-row flex-1">
+          {/* ---------- Program Details ---------- */}
+          <section className="w-full md:w-1/2 bg-stone-800 p-6 md:p-12 overflow-auto">
+            <div className="text-amber-200 space-y-1 text-base md:text-lg">
+            
+              <h4 className="text-2xl md:text-4xl font-bold text-white mb-2">
+                Program Details
+              </h4>
+
+              <ul className="space-y-1">
+                {[
+                  "We don't charge any fees for physical exercises run by this online group for 8 weeks",
+                  "We completed 10 Batches, around 500 students learned physical exercises with our online group",
+                  "We have 4 masters and 10 volunteers to run this group",
+                  "You can see all of them as Admin in contacts",
+                  "This Batch 11 group starts from March for 8 weeks",
+                  "The group count is usually around 20-25 students in each class",
+                  "We teach same practices in both the classes, so you can attend either one class depending on your availability",
+                  "You can very well interact with Masters and Volunteers at the end of the class to ask questions",
+                  "SKY experienced Masters and Volunteers are running the class",
+                  "Please do your practices on the Mat",
+                  "Please turn on the video during online classes, Masters will correct your practices",
+                  "We will send Zoom class reminders one day before the class"
+                ].map((item) => (
+                  <li key={item} className="flex items-start">
+                    <span className="mr-2">👉</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <h3 className="text-2xl font-bold text-white mt-4">
+                Daily Practice
+              </h3>
+              <p>3 minutes in the morning</p>
+              <p>3 minutes in the evening</p>
+              <p>1 minute at bedtime</p>
+
+              
+              
+              
+            </div>
+          </section>
+
+          {/* ---------- Welcome Modal ---------- */}
+          <section className="w-full md:w-1/2 bg-stone-800 p-4 flex items-center justify-center">
+            <div className="w-full max-w-md bg-stone-700 p-6 rounded-2xl shadow-xl text-center space-y-3">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                
+              </h3>
+              <button
+                onClick={() => router.push("/")}
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+              >
+                Home
+              </button>
+              <button
+                onClick={handleJoinClick}
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+              >
+                Want to Join Physical Exercise?
+              </button>
+              
+
+              <button
+                onClick={() => router.push("/review")}
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+              >
+                Want to review Us?
+              </button>
+              
+            </div>
+          </section>
         </div>
 
-        {/* State Dropdown */}
-        <div className="mb-4">
-          <label htmlFor="state" className="block text-amber-200 mb-1">
-            State
-          </label>
-          <StateDropdown
-            name="state"
-            value={formData.state}
-            onChange={handleChange}
-          />
-        </div>
-
-        {/* Gender */}
-        <div className="mb-4">
-          <label htmlFor="gender" className="block text-amber-200 mb-1">
-            Gender
-          </label>
-          <select
-            name="gender"
-            id="gender"
-            required
-            value={formData.gender}
-            onChange={handleChange}
-            className="w-full border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
-          >
-            <option value="">Select your gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-        </div>
-
-        {/* Phone with Country Code */}
-        <div className="mb-4">
-          <label className="block text-amber-200 mb-1">Phone Number</label>
-          <div className="flex space-x-2">
-            <select
-              name="code"
-              value={formData.code}
-              onChange={handleChange}
-              className="border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
-            >
-              <option value="+1">+1 (US)</option>
-              <option value="+91">+91 (IN)</option>
-            </select>
-            <input
-              type="tel"
-              name="phone"
-              required
-              pattern="^\d{7,10}$"
-              title="Phone number must be 7 to 10 digits"
-              value={formData.phone}
-              onChange={handleChange}
-              className="flex-1 border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
-              placeholder="1234567890"
-            />
-          </div>
-          <p className="text-xs text-amber-200 mt-1">
-            Enter your 10 digit phone number.
-          </p>
-        </div>
-
-        {error && (
-          <p className="text-red-500 text-center mb-4">{error}</p>
-        )}
-
-        <div className="space-y-3">
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
-          >
-            {loading ? "Submitting..." : "Submit"}
-          </button>
-          <button
-            type="button"
-            onClick={handleBack}
-            className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
-          >
-            Back
-          </button>
-        </div>
-      </form>
-    </div>
+        {/* ------------ Bottom row: Benefits ------------ */}
+        <section className="w-full bg-stone-800 p-6 md:p-12 overflow-auto">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
+           PE Benefits
+          </h2>
+          <ul className="space-y-2 text-amber-200 leading-snug text-base md:text-lg">
+            {benefits.map((item, idx) => (
+              <li key={idx} className="flex items-start">
+                <span className="mr-2">👉</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </main>
+    </>
   );
 }
