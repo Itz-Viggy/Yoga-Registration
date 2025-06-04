@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function HomePage() {
   const router = useRouter();
   const handleKKClick = () => router.push("/kkhome");
-  const handlePEClick = () => router.push("/register/pe");
+  const handlePEClick = () => router.push("/pe");
 
   return (
     <>
