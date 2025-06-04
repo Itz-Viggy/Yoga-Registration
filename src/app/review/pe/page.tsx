@@ -42,7 +42,7 @@ export default function FeedbackPage() {
     }
   };
   const handleBack = () => {
-    router.push("/kkhome");
+    router.push("/pe");
   };
   return (
     <div className="min-h-screen flex items-center justify-center bg-stone-800 p-4">
