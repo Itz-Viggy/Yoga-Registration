@@ -51,7 +51,7 @@ export default function FeedbackPage() {
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-stone-700 p-8 rounded-xl shadow-lg space-y-6 relative"
       >
-        <div className="absolute top-2 left-2">
+        <div className="absolute top-2 right-2">
           <button 
             onClick={() => router.push("/pe")} 
             className="p-2 bg-amber-700 hover:bg-amber-600 rounded-full transition-colors"
