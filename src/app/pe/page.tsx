@@ -113,7 +113,7 @@ export default function HomePage() {
               
 
               <button
-                onClick={() => router.push("/review")}
+                onClick={() => router.push("/review/pe")}
                 className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
               >
                 PE Feedback
