@@ -48,12 +48,22 @@ export default function FeedbackPage() {
     <div className="min-h-screen flex items-center justify-center bg-stone-800 p-4">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-stone-700 p-8 rounded-xl shadow-lg space-y-6"
+        className="w-full max-w-lg bg-stone-700 p-8 rounded-xl shadow-lg space-y-6 relative"
       >
+        <div className="absolute top-2 left-2">
+          <button 
+            onClick={() => router.push("/pe")} 
+            className="p-2 bg-amber-700 hover:bg-amber-600 rounded-full transition-colors"
+            aria-label="Return to home"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10m-1 5h-1" />
+            </svg>
+          </button>
+        </div>
         <h2 className="text-2xl font-bold text-white text-center">
           Physical Ecercise Feedback
         </h2>
-
         {/* Name */}
         <div>
           <label htmlFor="name" className="block text-amber-200 mb-1">
