@@ -51,7 +51,7 @@ export default function FeedbackPage() {
         className="w-full max-w-lg bg-stone-700 p-8 rounded-xl shadow-lg space-y-6"
       >
         <h2 className="text-2xl font-bold text-white text-center">
-          PE Feedback
+          Physical Ecercise Feedback
         </h2>
 
         {/* Name */}
