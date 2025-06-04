@@ -86,7 +86,7 @@ export default function FeedbackPage() {
 
         {/* Gender */}
         <div>
-          <label className="block text-amber-200 mb-1">Gender</label>
+          <label className="block text-amber-200 mb-1">Group:</label>
           <div className="flex space-x-4">
             <label className="inline-flex items-center">
               <input
