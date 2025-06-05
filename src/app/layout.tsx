@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KK Registration ",
+  title: "SKY Yoga Registration ",
   description: "",
 };
 
