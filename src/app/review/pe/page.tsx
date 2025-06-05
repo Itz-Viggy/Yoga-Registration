@@ -35,7 +35,7 @@ export default function FeedbackPage() {
         body: JSON.stringify(formData),
       });
       if (!res.ok) throw new Error("Submission failed");
-      router.push("/");
+      router.push("/pe");
     } catch (err: any) {
       setError(err.message);
     } finally {
