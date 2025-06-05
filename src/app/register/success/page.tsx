@@ -8,7 +8,7 @@ export default function SuccessPage() {
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      router.push("/kkhome");
+      router.push("/");
     }, 2000);
 
     return () => clearTimeout(timeoutId);
