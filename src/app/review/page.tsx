@@ -60,7 +60,7 @@ export default function FeedbackPage() {
         </div>
         <h1 className="text-2xl font-bold text-white text-center">
           Kayakalpa Feedback  <br />
-          (KK)
+          
         </h1>
       </header>
 
