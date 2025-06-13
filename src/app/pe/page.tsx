@@ -127,9 +127,9 @@ export default function HomePage() {
         <section className="w-full bg-stone-800 p-6 md:p-12 overflow-auto">
           {/* Daily Practice */}
           <div className="mb-8">
-            <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
+            <h4 className="text-2xl md:text-4xl font-extrabold text-white mb-3">
               Daily Practice
-            </h3>
+            </h4>
             <p className="text-amber-200 mb-2">The 9 steps practices will take 45 mins of time:</p>
             <ul className="list-none space-y-2 text-amber-200 leading-snug text-base md:text-lg">
               <li className="flex items-start">
@@ -173,9 +173,9 @@ export default function HomePage() {
           
           {/* PE Benefits */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
+            <h4 className="text-2xl md:text-4xl font-extrabold text-white mb-3">
               PE Benefits
-            </h2>
+            </h4>
             <ul className="space-y-2 text-amber-200 leading-snug text-base md:text-lg">
               {benefits.map((item, idx) => (
                 <li key={idx} className="flex items-start">
