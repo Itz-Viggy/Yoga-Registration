@@ -116,7 +116,7 @@ export default function HomePage() {
                 onClick={handleJoinClick}
                 className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base mt-6"
               >
-                Want to Enroll for Kayakalpa (KK)?
+                KK Registration
               </button>
               <div className="flex space-x-4">
                 <button
@@ -137,7 +137,7 @@ export default function HomePage() {
                 onClick={() => router.push("/review")}
                 className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
               >
-                Want to review Us?
+                KK Feedback
               </button>
               
             </div>
