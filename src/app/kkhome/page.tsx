@@ -44,8 +44,8 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-2xl font-bold text-white text-center">
-          SKY Kayakalpa Yoga <br />
-           (KK)
+          Kayakalpa Registration <br />
+           
         </h1>
       </header>
 
