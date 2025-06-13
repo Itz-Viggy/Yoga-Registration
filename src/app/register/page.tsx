@@ -64,8 +64,8 @@ export default function RegisterPage() {
           />
         </div>
         <h1 className="text-2xl font-bold text-white text-center">
-          Kayakalpa Registration  <br />
-          (KK)
+          Kayakalpa Registration 
+          
         </h1>
       </header>
 
@@ -74,9 +74,7 @@ export default function RegisterPage() {
           onSubmit={handleSubmit}
           className="max-w-md w-full bg-stone-700 p-8 rounded-xl shadow-lg"
         >
-          <h2 className="text-2xl font-bold text-white mb-6 text-center">
-            Register
-          </h2>
+          
 
           {/* First Name */}
           <div className="mb-4">
