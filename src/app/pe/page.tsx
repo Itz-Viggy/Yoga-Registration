@@ -62,7 +62,7 @@ export default function HomePage() {
                   
                   "Each Batch runs for 8 weeks - 1 day a week",
                   "The group count is usually around 20-25 students in each class",
-                  "We teach same practices in both the classes, so you can attend either one class depending on your availability",
+                  "In Womens batch we teach same exercises on both Wednesday and Saturday and you can choose any one day",
                   "You can very well interact with Masters and Volunteers at the end of the class to ask questions",
                   "SKY experienced Masters and Volunteers are running the class",
                   "Please do your practices on the Mat",
