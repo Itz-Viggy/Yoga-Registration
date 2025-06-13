@@ -58,8 +58,8 @@ export default function HomePage() {
                 {[
                   "We don't charge any fees for physical exercises run by this online group for 8 weeks",
                   "We completed 10 Batches, around 500 students learned physical exercises with our online group",
-                  "We have 4 masters and 10 volunteers to run this group",
-                  "You can see all of them as Admin in contacts",
+                  "We have 4 masters and 10 volunteers to run this group and",
+                  
                   "Each Batch runs for 8 weeks - 1 day a week",
                   "The group count is usually around 20-25 students in each class",
                   "We teach same practices in both the classes, so you can attend either one class depending on your availability",
