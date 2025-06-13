@@ -44,8 +44,8 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-2xl font-bold text-white text-center">
-          Kayakalpa Registration <br />
-           
+          Kayakalpa Registration  <br />
+          (KK)
         </h1>
       </header>
 
