@@ -69,7 +69,7 @@ export default function RegisterPage() {
         </h1>
       </header>
 
-      <div className="min-h-screen flex items-start justify-center pt-20 bg-stone-800">
+      <div className="min-h-screen flex items-start justify-center pt-10 bg-stone-800">
         <form
           onSubmit={handleSubmit}
           className="max-w-md w-full bg-stone-700 p-8 rounded-xl shadow-lg"
