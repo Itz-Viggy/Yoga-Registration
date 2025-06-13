@@ -69,9 +69,7 @@ export default function FeedbackPage() {
           onSubmit={handleSubmit}
           className="w-full max-w-lg bg-stone-700 p-8 rounded-xl shadow-lg space-y-6"
         >
-          <h2 className="text-2xl font-bold text-white text-center">
-            Session Feedback
-          </h2>
+          
 
           {/* Name */}
           <div>
