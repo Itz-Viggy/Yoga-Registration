@@ -60,7 +60,7 @@ export default function HomePage() {
                   "We completed 10 Batches, around 500 students learned physical exercises with our online group",
                   "We have 4 masters and 10 volunteers to run this group",
                   "You can see all of them as Admin in contacts",
-                  "This Batch 11 group starts for 8 weeks",
+                  "Each Batch 11 group runs for 8 weeks",
                   "The group count is usually around 20-25 students in each class",
                   "We teach same practices in both the classes, so you can attend either one class depending on your availability",
                   "You can very well interact with Masters and Volunteers at the end of the class to ask questions",
