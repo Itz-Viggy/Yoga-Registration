@@ -48,28 +48,16 @@ export default function FeedbackPage() {
 
   return (
     <>
-      {/* Header */}
-      <header className="w-full bg-stone-900 py-4 relative">
-        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer" onClick={() => router.push("/") }>
-          <Image
-            src="/Vethathri-Maharishi-1-removebg-preview.png"
-            alt="Kayakalpa Logo"
-            width={48}
-            height={48}
-          />
-        </div>
-        <h1 className="text-3xl font-bold text-white text-center">
-          Kayakalpa Feedback  <br />
-          
-        </h1>
-      </header>
+      
 
-      <div className="min-h-screen flex items-start justify-center pt-20 bg-stone-800 p-4">
+      <div className="min-h-screen flex items-start justify-center pt-4 bg-stone-800 p-4">
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-lg bg-stone-700 p-8 rounded-xl shadow-lg space-y-6"
         >
-          
+          <h2 className="text-2xl font-bold text-white-200 text-center mb-4">
+            Kayakalpa Feedback 
+          </h2>
 
           {/* Name */}
           <div>
