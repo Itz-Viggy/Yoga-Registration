@@ -58,7 +58,7 @@ export default function FeedbackPage() {
             height={48}
           />
         </div>
-        <h1 className="text-2xl font-bold text-white text-center">
+        <h1 className="text-3xl font-bold text-white text-center">
           Kayakalpa Feedback  <br />
           
         </h1>
