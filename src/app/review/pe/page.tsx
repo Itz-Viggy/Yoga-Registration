@@ -93,7 +93,7 @@ export default function FeedbackPage() {
                 type="radio"
                 name="gender"
                 value="female"
-                checked={formData.gender === "male"}
+                checked={formData.gender === "female"}
                 onChange={handleChange}
                 className="mr-2 text-amber-700 border-amber-700 bg-stone-700"
               />
@@ -105,7 +105,7 @@ export default function FeedbackPage() {
                 name="gender"
                 value="male"
                 required
-                checked={formData.gender === "female"}
+                checked={formData.gender === "male"}
                 onChange={handleChange}
                 className="mr-2 text-amber-700 border-amber-700 bg-stone-700"
               />
