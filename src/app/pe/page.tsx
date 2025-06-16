@@ -58,7 +58,7 @@ export default function HomePage() {
                 {[
                   "We don't charge any fees for physical exercises run by this online group for 8 weeks",
                   "We completed 10 Batches, around 500 students learned physical exercises with our online group",
-                  "We have 4 masters and 10 volunteers to run this group and",
+                  "We have 4 masters and 10 volunteers to run this online group class",
                   
                   "Each Batch runs for 8 weeks - 1 day a week",
                   "The group count is usually around 20-25 students in each class",
@@ -100,13 +100,13 @@ export default function HomePage() {
               
               <button
                 onClick={() => window.open("https://docs.google.com/document/d/1BDFD8BxX1OE347HK4KXAno3U8I_pJs44vHswShTd10Q/edit?usp=sharing", "_blank")}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base mt-6"
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl mt-6"
               >
                 New Joiners Handbook
               </button>
               <button
                 onClick={handleJoinClick}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl"
               >
                 PE Registration
               </button>
@@ -114,7 +114,7 @@ export default function HomePage() {
 
               <button
                 onClick={() => router.push("/review/pe")}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl"
               >
                 PE Feedback
               </button>

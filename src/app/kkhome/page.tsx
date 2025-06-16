@@ -114,20 +114,20 @@ export default function HomePage() {
               
               <button
                 onClick={handleJoinClick}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base mt-6"
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl mt-6"
               >
                 KK Registration
               </button>
               <div className="flex space-x-4">
                 <button
                   onClick={() => router.push("/register/step1")}
-                  className="flex-1 py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                  className="flex-1 py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl"
                 >
                   Payment Steps
                 </button>
                 <button
                   onClick={() => router.push("/Waiver.pdf")}
-                  className="flex-1 py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                  className="flex-1 py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl"
                 >
                   Waiver Form
                 </button>
@@ -135,7 +135,7 @@ export default function HomePage() {
 
               <button
                 onClick={() => router.push("/review")}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl"
               >
                 KK Feedback
               </button>

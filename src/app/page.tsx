@@ -66,7 +66,7 @@ export default function HomePage() {
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
                 <p className="text-white">
-                  Time: <span className="font-semibold">Sat (8 - 9:15 AM) EST</span>
+                  Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
                 </p>
                 <button
                   onClick={handlePEClick}
@@ -88,7 +88,7 @@ export default function HomePage() {
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
                 <p className="text-white">
-                  Time: <span className="font-semibold">Sat (8–9:30 AM) EST</span>
+                  Time: <span className="font-semibold">Saturday (8–9:30 AM) EST</span>
                 </p>
                 <button
                   onClick={handleKKClick}
@@ -112,7 +112,7 @@ export default function HomePage() {
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
                 <p className="text-white">
-                  Time: <span className="font-semibold">Sat (9:30 - 10:30 AM) EST</span>
+                  Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
                 </p>
                 <button
                   onClick={handlePEClick}

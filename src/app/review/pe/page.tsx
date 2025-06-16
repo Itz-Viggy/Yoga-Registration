@@ -17,11 +17,14 @@ export default function FeedbackPage() {
   const [error, setError] = useState("");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
+  
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -149,20 +152,25 @@ export default function FeedbackPage() {
 
         {/* Rating */}
         <div>
-          <label htmlFor="rating" className="block text-amber-200 mb-1">
-            👉 How would you rate overall experience? <span className="text-amber-400">*</span>
-          </label>
-          <input
-            type="text"
-            id="rating"
-            name="rating"
-            required
-            placeholder="e.g., Well Organized"
-            value={formData.rating}
-            onChange={handleChange}
-            className="w-full border border-amber-700 bg-stone-700 text-amber-200 p-2 rounded"
-          />
-        </div>
+  <label htmlFor="rating" className="block text-amber-200 mb-1">
+    👉 How would you rate overall experience? <span className="text-amber-400">*</span>
+  </label>
+  <select
+    id="rating"
+    name="rating"
+    required
+    value={formData.rating}
+    onChange={handleChange}
+    className="w-full border border-amber-700 bg-stone-700 text-amber-200 p-2 rounded"
+  >
+    <option value="" disabled>Select your rating</option>
+    <option value="Well Organized">Excellent</option>
+    <option value="Good">Very Good</option>
+    <option value="Ok">Good</option>
+    <option value="Needs Improvement">Needs Improvement</option>
+  </select>
+</div>
+
 
         {/* Other suggestions */}
         <div>
