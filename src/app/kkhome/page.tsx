@@ -87,6 +87,15 @@ export default function HomePage() {
               <p>3 minutes in the evening</p>
               <p>1 minute at bedtime</p>
 
+              <h3 className="text-2xl font-bold text-white mt-4">
+                KK Process
+              </h3>
+              <p>
+                Register for the course <br />
+                Complete the payment <br />
+                Complete the waiver form <br />
+              </p>
+
               
               
               
