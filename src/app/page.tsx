@@ -53,7 +53,7 @@ export default function HomePage() {
             </p>
 
             <div className="flex-1 p-3 bg-emerald-100 border border-green-200 rounded-lg text-left">
-              <p className="text-green-800 mb-2 text-sm md:text-base font-bold">
+              <p className="text-green-800 mb-2 text-lg md:text-xl font-bold">
                 Women's Physical Exercise
               </p>
               <p className="text-green-900">
@@ -67,7 +67,7 @@ export default function HomePage() {
               </p>
               <button
                 onClick={handlePEClick}
-                className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm md:text-base"
+                className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-lg md:text-xl"
               >
                 Physical Exercise
               </button>
@@ -76,7 +76,7 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row gap-4 mb-4">
               {/* Kayakalpa */}
               <div className="flex-1 p-3 bg-emerald-100 border border-green-200 rounded-lg text-left">
-                <p className="text-green-800 mb-2 text-sm md:text-base font-bold">
+                <p className="text-green-800 mb-2 text-lg md:text-xl font-bold">
                   Women's Kayakalpa Practices
                 </p>
                 <p className="text-green-900">
@@ -90,7 +90,7 @@ export default function HomePage() {
                 </p>
                 <button
                   onClick={handleKKClick}
-                  className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm md:text-base"
+                  className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-lg md:text-xl"
                 >
                   Kayakalpa Practices
                 </button>
@@ -98,7 +98,7 @@ export default function HomePage() {
 
               {/* Men's PE */}
               <div className="flex-1 p-3 bg-emerald-100 border border-green-200 rounded-lg text-left">
-                <p className="text-green-800 mb-2 text-sm md:text-base font-bold">
+                <p className="text-green-800 mb-2 text-lg md:text-xl font-bold">
                   Men's Physical Exercise
                 </p>
                 <p className="text-green-900">
@@ -112,7 +112,7 @@ export default function HomePage() {
                 </p>
                 <button
                   onClick={handlePEClick}
-                  className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm md:text-base"
+                  className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-lg md:text-xl"
                 >
                   Physical Exercise
                 </button>
