@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       {/* Header */}
-      <header className="w-full bg-stone-900 py-4 relative">
+      <header className="w-full bg-emerald-50 py-4 border-b border-green-300 relative">
         <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
           <Image
             src="/Vethathri-Maharishi-1-removebg-preview.png"
@@ -20,120 +20,104 @@ export default function HomePage() {
             height={48}
           />
         </div>
-        <h1 className="text-2xl font-bold text-white text-center">
-           Vethathiri Maharishi<br />
-           SKY Yoga
+        <h1 className="text-2xl font-bold text-green-900 text-center">
+          Vethathiri Maharishi<br />
+          SKY Yoga
         </h1>
       </header>
 
-
       {/* Welcome Modal */}
-      <main className="w-screen min-h-[calc(100vh-64px)] bg-stone-800 flex items-center justify-center py-8 md:py-16 px-4 md:px-8">
+      <main className="w-screen min-h-[calc(100vh-64px)] bg-emerald-50 flex items-center justify-center py-8 md:py-16 px-4 md:px-8">
         <div className="flex flex-col items-center w-full max-w-md">
-          {/* <h2 className="text-2xl font-bold text-amber-200 mb-6">Be Blessed</h2> */}
-          <div className="w-full max-w-md bg-stone-700 p-8 rounded-2xl shadow-xl text-center space-y-4 max-h-[90vh] overflow-auto">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+          <div className="w-full max-w-md bg-green-100 p-8 rounded-2xl shadow-xl text-center space-y-4 max-h-[90vh] overflow-auto border border-green-200">
+            <h3 className="text-2xl md:text-3xl font-bold text-green-900 mb-2">
               Be Blessed!
             </h3>
 
-            <p className="text-amber-200 mb-4 text-sm md:text-base">
-                Join us for an exclusive yoga experience.
-              </p>
-              <p className="mt-1 text-amber-200 font-semibold">
-                Click here for our {" "}
-                <a
-                  href="https://docs.google.com/document/d/1d-BmCclOnpf-NKeReSs7jxSTij4LKNDAN9PiQGUNMaY/edit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-white"
-                >
-                   Testimonials
-                </a>
-              </p>
-            <p className="text-amber-200 mb-4 text-sm md:text-base">
+            <p className="text-green-800 mb-4 text-sm md:text-base">
+              Join us for an exclusive yoga experience.
+            </p>
+            <p className="mt-1 text-green-800 font-semibold">
+              Click here for our{" "}
+              <a
+                href="https://docs.google.com/document/d/1d-BmCclOnpf-NKeReSs7jxSTij4LKNDAN9PiQGUNMaY/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-900"
+              >
+                Testimonials
+              </a>
+            </p>
+            <p className="text-green-800 mb-4 text-sm md:text-base">
               Upcoming SKY Programs:
             </p>
-            
-            {/* Two-column layout for program information */}
-            <div className="flex-1 p-3 bg-stone-800 rounded-lg text-left">
-                <p className="text-amber-200 mb-2 text-sm md:text-base">
-                  <span className="font-bold">Women's Physical Exercise</span>
-                </p>
-                <p className="text-white">
-                  When: <span className="font-semibold">(July 15 - August 31) 2025</span>
-                </p>
-                <p className="text-white">
-                  Where: <span className="font-semibold">Zoom</span>
-                </p>
-                <p className="text-white">
-                  Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
-                </p>
-                <button
-                  onClick={handlePEClick}
-                  className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
-                >
-                  Physical Exercise
-                </button>
-              </div>
+
+            <div className="flex-1 p-3 bg-emerald-100 border border-green-200 rounded-lg text-left">
+              <p className="text-green-800 mb-2 text-sm md:text-base font-bold">
+                Women's Physical Exercise
+              </p>
+              <p className="text-green-900">
+                When: <span className="font-semibold">(July 15 - August 31) 2025</span>
+              </p>
+              <p className="text-green-900">
+                Where: <span className="font-semibold">Zoom</span>
+              </p>
+              <p className="text-green-900">
+                Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
+              </p>
+              <button
+                onClick={handlePEClick}
+                className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm md:text-base"
+              >
+                Physical Exercise
+              </button>
+            </div>
+
             <div className="flex flex-col md:flex-row gap-4 mb-4">
-              {/* Left column - Kayakalpa */}
-              <div className="flex-1 p-3 bg-stone-800 rounded-lg text-left">
-                <p className="text-amber-200 mb-2 text-sm md:text-base">
-                  <span className="font-bold">Women's Kayakalpa Practices</span>
+              {/* Kayakalpa */}
+              <div className="flex-1 p-3 bg-emerald-100 border border-green-200 rounded-lg text-left">
+                <p className="text-green-800 mb-2 text-sm md:text-base font-bold">
+                  Women's Kayakalpa Practices
                 </p>
-                <p className="text-white">
+                <p className="text-green-900">
                   When: <span className="font-semibold">November 2025</span>
                 </p>
-                <p className="text-white">
+                <p className="text-green-900">
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
-                <p className="text-white">
+                <p className="text-green-900">
                   Time: <span className="font-semibold">Saturday (8–9:30 AM) EST</span>
                 </p>
                 <button
                   onClick={handleKKClick}
-                  className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                  className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm md:text-base"
                 >
                   Kayakalpa Practices
                 </button>
               </div>
-              
-              {/* Right column - Physical Exercise */}
-              
 
-              <div className="flex-1 p-3 bg-stone-800 rounded-lg text-left">
-                <p className="text-amber-200 mb-2 text-sm md:text-base">
-                  <span className="font-bold">Men's Physical Exercise</span>
+              {/* Men's PE */}
+              <div className="flex-1 p-3 bg-emerald-100 border border-green-200 rounded-lg text-left">
+                <p className="text-green-800 mb-2 text-sm md:text-base font-bold">
+                  Men's Physical Exercise
                 </p>
-                <p className="text-white">
+                <p className="text-green-900">
                   When: <span className="font-semibold">TBD</span>
                 </p>
-                <p className="text-white">
+                <p className="text-green-900">
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
-                <p className="text-white">
+                <p className="text-green-900">
                   Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
                 </p>
                 <button
                   onClick={handlePEClick}
-                  className="w-full mt-2 py-2 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-sm md:text-base"
+                  className="w-full mt-2 py-2 px-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm md:text-base"
                 >
                   Physical Exercise
                 </button>
               </div>
             </div>
-            {/*<p className="mt-1">
-                🌐 Visit us:{' '}
-                <a
-                  href="https://www.skyna.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-white"
-                >
-                  www.skyna.org
-                </a>
-              </p>*/}
-              
           </div>
         </div>
       </main>
