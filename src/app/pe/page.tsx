@@ -53,26 +53,27 @@ export default function HomePage() {
                 Program Details:
               </h4>
 
-              <ul className="space-y-2 md:text-xl">
-                {[
-                  "We don't charge any fees for physical exercises run by this online group for 8 weeks",
-                  "We completed 10 Batches, around 500 students learned physical exercises with our online group",
-                  "We have 4 masters and 10 volunteers to run this online group class",
-                  "Each Batch runs for 8 weeks - 1 day a week",
-                  "The group count is usually around 20-25 students in each class",
-                  "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day",
-                  "You can interact with Masters and Volunteers at the end of the class to ask questions",
-                  "SKY experienced Masters and Volunteers are running the class",
-                  "Please do your practices on the Mat",
-                  "Please turn on the video during online classes, Masters will correct your practices",
-                  "We will send Zoom class reminders one day before the class"
-                ].map((item) => (
-                  <li key={item} className="flex items-start">
-                    <span className="mr-2 text-2xl">●</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <ul className="space-y-3 text-lg md:text-xl lg:text-2xl">
+  {[
+    "We don't charge any fees for physical exercises run by this online group for 8 weeks",
+    "We completed 10 Batches, around 500 students learned physical exercises with our online group",
+    "We have 4 masters and 10 volunteers to run this online group class",
+    "Each Batch runs for 8 weeks - 1 day a week",
+    "The group count is usually around 20-25 students in each class",
+    "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day",
+    "You can interact with Masters and Volunteers at the end of the class to ask questions",
+    "SKY experienced Masters and Volunteers are running the class",
+    "Please do your practices on the Mat",
+    "Please turn on the video during online classes, Masters will correct your practices",
+    "We will send Zoom class reminders one day before the class"
+  ].map((item) => (
+    <li key={item} className="flex items-start">
+      <span className="mr-2 text-2xl lg:text-3xl">●</span>
+      <span>{item}</span>
+    </li>
+  ))}
+</ul>
+
             </div>
           </section>
 
@@ -133,8 +134,8 @@ export default function HomePage() {
             <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-3">
               Daily Practice:
             </h4>
-            <p className="text-black mb-2">The 9 step practices take approximately 45 minutes:</p>
-            <ul className="space-y-2 text-black text-base md:text-lg">
+            <p className="text-black mb-2 text-lg md:text-xl lg:text-2xl">The 9 step practices take approximately 45 minutes:</p>
+            <ul className="space-y-2 text-black text-lg md:text-xl lg:text-2xl">
               {[
                 "Hand exercises",
                 "Leg exercises",
@@ -158,7 +159,7 @@ export default function HomePage() {
             <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-3">
               PE Benefits:
             </h4>
-            <ul className="space-y-2 text-black text-base md:text-lg">
+            <ul className="space-y-2 text-black text-lg md:text-xl lg:text-2xl">
               {benefits.map((item, idx) => (
                 <li key={idx} className="flex items-start">
                   <span className="mr-2 text-2xl">●</span>
