@@ -20,7 +20,7 @@ export default function HomePage() {
             height={48}
           />
         </div>
-        <h1 className="text-2xl font-bold text-center" style={{ color: "#a57d6b" }}>
+        <h1 className="text-2xl font-bold text-center text-black">
           Vethathiri Maharishi<br />
           SKY Yoga
         </h1>
@@ -30,40 +30,40 @@ export default function HomePage() {
       <main className="w-screen min-h-[calc(100vh-64px)] bg-white flex items-center justify-center py-8 md:py-16 px-4 md:px-8">
         <div className="flex flex-col items-center w-full max-w-md">
           <div className="w-full max-w-md p-8 rounded-2xl shadow-xl text-center space-y-4 max-h-[90vh] overflow-auto border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
-            <h3 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: "#a57d6b" }}>
+            <h3 className="text-2xl md:text-3xl font-bold mb-2 text-black">
               Be Blessed!
             </h3>
 
-            <p className="mb-4 text-sm md:text-base" style={{ color: "#a57d6b" }}>
+            <p className="mb-4 text-sm md:text-base text-black">
               Join us for an exclusive yoga experience.
             </p>
-            <p className="mt-1 font-semibold" style={{ color: "#a57d6b" }}>
+            <p className="mt-1 font-semibold text-black">
               Click here for our{" "}
               <a
                 href="https://docs.google.com/document/d/1d-BmCclOnpf-NKeReSs7jxSTij4LKNDAN9PiQGUNMaY/edit"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
-                style={{ color: "#a57d6b" }}
+                className="underline text-black"
               >
                 Testimonials
               </a>
             </p>
-            <p className="mb-4 text-sm md:text-base" style={{ color: "#a57d6b" }}>
+
+            <p className="mb-4 text-sm md:text-base text-black">
               Upcoming SKY Programs:
             </p>
 
             <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
-              <p className="mb-2 text-lg md:text-xl font-bold" style={{ color: "#a57d6b" }}>
+              <p className="mb-2 text-lg md:text-xl font-bold text-black">
                 Women's Physical Exercise
               </p>
-              <p style={{ color: "#a57d6b" }}>
+              <p className="text-black">
                 When: <span className="font-semibold">(July 15 - August 31) 2025</span>
               </p>
-              <p style={{ color: "#a57d6b" }}>
+              <p className="text-black">
                 Where: <span className="font-semibold">Zoom</span>
               </p>
-              <p style={{ color: "#a57d6b" }}>
+              <p className="text-black">
                 Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
               </p>
               <button
@@ -78,16 +78,16 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row gap-4 mb-4">
               {/* Kayakalpa */}
               <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
-                <p className="mb-2 text-lg md:text-xl font-bold" style={{ color: "#a57d6b" }}>
+                <p className="mb-2 text-lg md:text-xl font-bold text-black">
                   Women's Kayakalpa Practices
                 </p>
-                <p style={{ color: "#a57d6b" }}>
+                <p className="text-black">
                   When: <span className="font-semibold">November 2025</span>
                 </p>
-                <p style={{ color: "#a57d6b" }}>
+                <p className="text-black">
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
-                <p style={{ color: "#a57d6b" }}>
+                <p className="text-black">
                   Time: <span className="font-semibold">Saturday (8–9:30 AM) EST</span>
                 </p>
                 <button
@@ -101,16 +101,16 @@ export default function HomePage() {
 
               {/* Men's PE */}
               <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
-                <p className="mb-2 text-lg md:text-xl font-bold" style={{ color: "#a57d6b" }}>
+                <p className="mb-2 text-lg md:text-xl font-bold text-black">
                   Men's Physical Exercise
                 </p>
-                <p style={{ color: "#a57d6b" }}>
+                <p className="text-black">
                   When: <span className="font-semibold">TBD</span>
                 </p>
-                <p style={{ color: "#a57d6b" }}>
+                <p className="text-black">
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
-                <p style={{ color: "#a57d6b" }}>
+                <p className="text-black">
                   Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
                 </p>
                 <button
