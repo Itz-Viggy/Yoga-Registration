@@ -7,6 +7,7 @@ import StateDropdown from "@/components/statesdropdown";
 export default function PhysicalExercisePage() {
   const router = useRouter();
   const [formData, setFormData] = useState({
+    participantType: "",  // New field for New or Returning
     firstname: "",
     lastname: "",
     state: "",
@@ -57,6 +58,36 @@ export default function PhysicalExercisePage() {
         <h2 className="text-2xl font-bold text-white mb-6 text-center">
           Physical Exercise Registration
         </h2>
+
+        {/* New or Returning Question */}
+        <div className="mb-4">
+          <label className="block text-amber-200 mb-1">Are you a new or returning participant?</label>
+          <div className="flex space-x-4 mt-2">
+            <label className="flex items-center text-amber-200">
+              <input
+                type="radio"
+                name="participantType"
+                value="New"
+                checked={formData.participantType === "New"}
+                onChange={handleChange}
+                className="mr-2"
+                required
+              />
+              New
+            </label>
+            <label className="flex items-center text-amber-200">
+              <input
+                type="radio"
+                name="participantType"
+                value="Returning"
+                checked={formData.participantType === "Returning"}
+                onChange={handleChange}
+                className="mr-2"
+              />
+              Returning
+            </label>
+          </div>
+        </div>
 
         {/* First Name */}
         <div className="mb-4">

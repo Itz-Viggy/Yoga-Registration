@@ -3,7 +3,7 @@ import { google } from "googleapis";
 
 export async function POST(req: NextRequest) {
   try {
-    const { firstname, lastname, state, gender, code, phone } = await req.json();
+    const { firstname, lastname, state, gender, code, phone,participantType } = await req.json();
     // Normalize private key
     const processedKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n") || "";
     console.log("Private key length:", processedKey.length);
@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
       range: "PE Registration!A2:E",
       valueInputOption: "RAW",
       requestBody: {
-        values: [[firstname, lastname, state, gender, `${code} ${phone}`]],
+        values: [[participantType,firstname, lastname, state, gender, `${code} ${phone}`]],
       },
     });
 
