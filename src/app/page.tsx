@@ -68,7 +68,7 @@ export default function HomePage() {
               </p>
               <button
                 onClick={handlePEClick}
-                className="w-full mt-2 py-2 px-4 text-white font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
+                className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                 style={{ backgroundColor: "#b28d7b" }}
               >
                 Physical Exercise
@@ -115,7 +115,7 @@ export default function HomePage() {
                 </p>
                 <button
                   onClick={handlePEClick}
-                  className="w-full mt-2 py-2 px-4 text-white font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
+                  className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                   style={{ backgroundColor: "#b28d7b" }}
                 >
                   Physical Exercise
