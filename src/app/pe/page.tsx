@@ -50,7 +50,7 @@ export default function HomePage() {
           <section className="w-full md:w-1/2 p-6 md:p-12 overflow-auto">
             <div className="space-y-3 text-black text-base md:text-lg border rounded-xl p-4" style={{ borderColor: "#a57d6b" }}>
               <h4 className="text-2xl md:text-4xl font-bold mb-2 text-black">
-                Program Details
+                Program Details:
               </h4>
 
               <ul className="space-y-2 md:text-xl">
@@ -131,7 +131,7 @@ export default function HomePage() {
           
           <div className="mb-8 border rounded-xl p-4" style={{ borderColor: "#a57d6b" }}>
             <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-3">
-              Daily Practice
+              Daily Practice:
             </h4>
             <p className="text-black mb-2">The 9 step practices take approximately 45 minutes:</p>
             <ul className="space-y-2 text-black text-base md:text-lg">
@@ -156,7 +156,7 @@ export default function HomePage() {
 
           <div className="border rounded-xl p-4" style={{ borderColor: "#a57d6b" }}>
             <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-3">
-              PE Benefits
+              PE Benefits:
             </h4>
             <ul className="space-y-2 text-black text-base md:text-lg">
               {benefits.map((item, idx) => (
