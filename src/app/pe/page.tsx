@@ -68,7 +68,7 @@ export default function HomePage() {
                   "We will send Zoom class reminders one day before the class"
                 ].map((item) => (
                   <li key={item} className="flex items-start">
-                    <span className="mr-2 text-2xl">○</span>
+                    <span className="mr-2 text-2xl">●</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -161,7 +161,7 @@ export default function HomePage() {
             <ul className="space-y-2 text-black text-base md:text-lg">
               {benefits.map((item, idx) => (
                 <li key={idx} className="flex items-start">
-                  <span className="mr-2 text-lg">○</span>
+                  <span className="mr-2 text-2xl">●</span>
                   <span>{item}</span>
                 </li>
               ))}
