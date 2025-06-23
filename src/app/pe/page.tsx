@@ -149,7 +149,7 @@ export default function HomePage() {
       "Relaxation (total body relaxation)"
     ].map((item) => (
       <li key={item} className="flex items-start">
-        <span className="mr-2">💎</span>
+        <span className="mr-2">✅</span>
         <span>{item}</span>
       </li>
     ))}
