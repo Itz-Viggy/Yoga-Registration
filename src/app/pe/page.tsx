@@ -27,7 +27,7 @@ export default function HomePage() {
   return (
     <>
       {/* Header */}
-      <header className="w-full bg-white py-4 border-b relative" style={{ borderColor: "#a57d6b" }}>
+      <header className="w-full py-4 border-b relative" style={{ borderColor: "#a57d6b", backgroundColor: "#74806a", color:"#a57d6b" }}>
         <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
           <Image
             src="/Vethathri-Maharishi-1-removebg-preview.png"
@@ -36,7 +36,7 @@ export default function HomePage() {
             height={48}
           />
         </div>
-        <h1 className="text-2xl font-bold text-center text-black"style={{ color: "#74806a" }}>
+        <h1 className="text-2xl font-bold text-center text-black">
           SKY Yoga <br />
           Physical Exercise (PE)
         </h1>
