@@ -61,7 +61,7 @@ export default function HomePage() {
         "Each Batch runs for 8 weeks - 1 day a week",
         "The group count is usually around 20-25 students in each class",
         "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day",
-        "You can interact with Masters and Volunteers at the end of the class to ask questions",
+        "You can interact with Masters and Volunteers at the end of the class to calrify questions",
         "SKY experienced Masters and Volunteers are running the class",
         "Please do your practices on the Mat",
         "Please turn on the video during online classes, Masters will correct your practices",
@@ -149,7 +149,7 @@ export default function HomePage() {
       "Relaxation (total body relaxation)"
     ].map((item) => (
       <li key={item} className="flex items-start">
-        <span className="mr-2">✅</span>
+        <span className="mr-2">💎</span>
         <span>{item}</span>
       </li>
     ))}
