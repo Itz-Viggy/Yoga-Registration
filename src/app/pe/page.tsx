@@ -99,7 +99,7 @@ export default function HomePage() {
               
               <button
                 onClick={handleJoinClick}
-                className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
+                className="w-full mt-4 py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                 style={{ backgroundColor: "#c49d8b" }}
               >
                 PE Registration
