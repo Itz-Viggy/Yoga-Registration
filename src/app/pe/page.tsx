@@ -36,7 +36,7 @@ export default function HomePage() {
             height={48}
           />
         </div>
-        <h1 className="text-2xl font-bold text-center text-black">
+        <h1 className="text-2xl font-bold text-center text-black"style={{ color: "#74806a" }}>
           SKY Yoga <br />
           Physical Exercise (PE)
         </h1>
