@@ -94,9 +94,7 @@ export default function HomePage() {
                 </button>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">
-                Join Our Program
-              </h3>
+              
 
               
               <button
