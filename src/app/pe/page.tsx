@@ -53,7 +53,7 @@ export default function HomePage() {
                 Program Details
               </h4>
 
-              <ul className="space-y-2">
+              <ul className="space-y-2 md:text-xl">
                 {[
                   "We don't charge any fees for physical exercises run by this online group for 8 weeks",
                   "We completed 10 Batches, around 500 students learned physical exercises with our online group",
@@ -68,7 +68,7 @@ export default function HomePage() {
                   "We will send Zoom class reminders one day before the class"
                 ].map((item) => (
                   <li key={item} className="flex items-start">
-                    <span className="mr-2 text-lg">○</span>
+                    <span className="mr-2 text-2xl">○</span>
                     <span>{item}</span>
                   </li>
                 ))}
