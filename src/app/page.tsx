@@ -69,7 +69,7 @@ export default function HomePage() {
               <button
                 onClick={handlePEClick}
                 className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
-                style={{ backgroundColor: "#b28d7b" }}
+                style={{ backgroundColor: "#c49d8b" }}
               >
                 Physical Exercise
               </button>
@@ -93,7 +93,7 @@ export default function HomePage() {
                 <button
                   onClick={handleKKClick}
                   className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
-                  style={{ backgroundColor: "#b28d7b" }}
+                  style={{ backgroundColor: "#c49d8b" }}
                 >
                   Kayakalpa Practices
                 </button>
@@ -116,7 +116,7 @@ export default function HomePage() {
                 <button
                   onClick={handlePEClick}
                   className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
-                  style={{ backgroundColor: "#b28d7b" }}
+                  style={{ backgroundColor: "#c49d8b" }}
                 >
                   Physical Exercise
                 </button>

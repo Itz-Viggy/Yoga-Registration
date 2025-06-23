@@ -101,7 +101,7 @@ export default function HomePage() {
               <button
                 onClick={handleJoinClick}
                 className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
-                style={{ backgroundColor: "#b28d7b" }}
+                style={{ backgroundColor: "#c49d8b" }}
               >
                 PE Registration
               </button>
@@ -109,7 +109,7 @@ export default function HomePage() {
               <button
                 onClick={() => router.push("/review/pe")}
                 className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
-                style={{ backgroundColor: "#b28d7b" }}
+                style={{ backgroundColor: "#c49d8b" }}
               >
                 PE Feedback
               </button>
@@ -117,7 +117,7 @@ export default function HomePage() {
               <button
                 onClick={() => window.open("https://docs.google.com/document/d/1BDFD8BxX1OE347HK4KXAno3U8I_pJs44vHswShTd10Q/edit?usp=sharing", "_blank")}
                 className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
-                style={{ backgroundColor: "#b28d7b" }}
+                style={{ backgroundColor: "#c49d8b" }}
               >
                 New Joiners Handbook
               </button>
