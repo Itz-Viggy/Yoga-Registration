@@ -130,44 +130,48 @@ export default function HomePage() {
         {/* Bottom Row: Daily Practice and Benefits */}
         <section className="w-full p-6 md:p-12 overflow-auto">
           
-          <div className="mb-8 border rounded-xl p-4" style={{ borderColor: "#a57d6b" }}>
-            <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-3">
-              Daily Practice:
-            </h4>
-            <p className="text-black mb-2 text-lg md:text-xl lg:text-2xl">The 9 step practices take approximately 45 minutes:</p>
-            <ul className="space-y-2 text-black text-lg md:text-xl lg:text-2xl">
-              {[
-                "Hand exercises",
-                "Leg exercises",
-                "Breathing exercises (Strengthen lungs)",
-                "Eye exercises",
-                "Kapalabathi (to rejuvenate Brain cells)",
-                "Makarasana (strengthen back)",
-                "Body Massage",
-                "14 point acupressure (Focus on inner glands)",
-                "Relaxation (total body relaxation)"
-              ].map((item) => (
-                <li key={item} className="flex items-start">
-                  <span className="mr-2">✅</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Daily Practice */}
+<div className="mb-8 border rounded-xl p-4" style={{ borderColor: "#a57d6b", backgroundColor: "#f4ebe8" }}>
+  <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-3">
+    Daily Practice:
+  </h4>
+  <p className="text-black mb-2 text-lg md:text-xl lg:text-2xl">
+    The 9 step practices take approximately 45 minutes:
+  </p>
+  <ul className="space-y-2 text-black text-lg md:text-xl lg:text-2xl">
+    {[
+      "Hand exercises",
+      "Leg exercises",
+      "Breathing exercises (Strengthen lungs)",
+      "Eye exercises",
+      "Kapalabathi (to rejuvenate Brain cells)",
+      "Makarasana (strengthen back)",
+      "Body Massage",
+      "14 point acupressure (Focus on inner glands)",
+      "Relaxation (total body relaxation)"
+    ].map((item) => (
+      <li key={item} className="flex items-start">
+        <span className="mr-2">✅</span>
+        <span>{item}</span>
+      </li>
+    ))}
+  </ul>
+</div>
 
-          <div className="border rounded-xl p-4" style={{ borderColor: "#a57d6b" }}>
-            <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-3">
-              PE Benefits:
-            </h4>
-            <ul className="space-y-2 text-black text-lg md:text-xl lg:text-2xl">
-              {benefits.map((item, idx) => (
-                <li key={idx} className="flex items-start">
-                  <span className="mr-2 text-2xl">●</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+
+<div className="border rounded-xl p-4" style={{ borderColor: "#a57d6b", backgroundColor: "#f4ebe8" }}>
+  <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-3">
+    PE Benefits:
+  </h4>
+  <ul className="space-y-2 text-black text-lg md:text-xl lg:text-2xl">
+    {benefits.map((item, idx) => (
+      <li key={idx} className="flex items-start">
+        <span className="mr-2 text-2xl">●</span>
+        <span>{item}</span>
+      </li>
+    ))}
+  </ul>
+</div>
 
         </section>
       </main>
