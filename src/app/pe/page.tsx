@@ -47,35 +47,35 @@ export default function HomePage() {
         {/* Top Row */}
         <div className="flex flex-col md:flex-row flex-1">
           {/* Program Details */}
-          <section className="w-full md:w-1/2 p-6 md:p-12 overflow-auto">
-            <div className="space-y-3 text-black text-base md:text-lg border rounded-xl p-4" style={{ borderColor: "#a57d6b" }}>
-              <h4 className="text-2xl md:text-4xl font-bold mb-2 text-black">
-                Program Details:
-              </h4>
+<section className="w-full md:w-1/2 p-6 md:p-12 overflow-auto">
+  <div className="space-y-3 text-black text-base md:text-lg border rounded-xl p-4" style={{ borderColor: "#a57d6b", backgroundColor: "#f4ebe8" }}>
+    <h4 className="text-2xl md:text-4xl font-bold mb-2 text-black">
+      Program Details:
+    </h4>
 
-              <ul className="space-y-3 text-lg md:text-xl lg:text-2xl">
-  {[
-    "We don't charge any fees for physical exercises run by this online group for 8 weeks",
-    "We completed 10 Batches, around 500 students learned physical exercises with our online group",
-    "We have 4 masters and 10 volunteers to run this online group class",
-    "Each Batch runs for 8 weeks - 1 day a week",
-    "The group count is usually around 20-25 students in each class",
-    "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day",
-    "You can interact with Masters and Volunteers at the end of the class to ask questions",
-    "SKY experienced Masters and Volunteers are running the class",
-    "Please do your practices on the Mat",
-    "Please turn on the video during online classes, Masters will correct your practices",
-    "We will send Zoom class reminders one day before the class"
-  ].map((item) => (
-    <li key={item} className="flex items-start">
-      <span className="mr-2 text-2xl lg:text-3xl">●</span>
-      <span>{item}</span>
-    </li>
-  ))}
-</ul>
+    <ul className="space-y-3 text-lg md:text-xl lg:text-2xl">
+      {[
+        "We don't charge any fees for physical exercises run by this online group for 8 weeks",
+        "We completed 10 Batches, around 500 students learned physical exercises with our online group",
+        "We have 4 masters and 10 volunteers to run this online group class",
+        "Each Batch runs for 8 weeks - 1 day a week",
+        "The group count is usually around 20-25 students in each class",
+        "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day",
+        "You can interact with Masters and Volunteers at the end of the class to ask questions",
+        "SKY experienced Masters and Volunteers are running the class",
+        "Please do your practices on the Mat",
+        "Please turn on the video during online classes, Masters will correct your practices",
+        "We will send Zoom class reminders one day before the class"
+      ].map((item) => (
+        <li key={item} className="flex items-start">
+          <span className="mr-2 text-2xl lg:text-3xl">●</span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
 
-            </div>
-          </section>
 
           {/* Welcome Modal */}
           <section className="w-full md:w-1/2 p-4 flex items-center justify-center">
