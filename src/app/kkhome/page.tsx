@@ -34,8 +34,14 @@ export default function HomePage() {
   return (
     <>
       {/* Header */}
-      <header className="w-full bg-stone-900 py-4 relative">
-        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer" onClick={() => router.push("/")}>
+      <header
+        className="w-full py-4 border-b relative"
+        style={{ borderColor: "#a57d6b", backgroundColor: "#a57d6b" }}
+      >
+        <div
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+          onClick={() => router.push("/")}
+        >
           <Image
             src="/Vethathri-Maharishi-1-removebg-preview.png"
             alt="Kayakalpa Logo"
@@ -43,100 +49,110 @@ export default function HomePage() {
             height={48}
           />
         </div>
-        <h1 className="text-2xl font-bold text-white text-center">
-          Kayakalpa Registration  <br />
-          (KK)
+        <h1 className="text-2xl font-bold text-center text-black">
+          Kayakalpa Registration (KK)
         </h1>
       </header>
 
       {/* Main Content */}
-      <main className="w-screen flex flex-col overflow-hidden h-auto md:h-[calc(100vh-64px)]">
-        {/* ------------ Top row ------------ */}
+      <main className="w-screen flex flex-col overflow-hidden h-auto md:h-[calc(100vh-64px)] bg-white">
+        {/* Top row */}
         <div className="flex flex-col md:flex-row flex-1">
-          {/* ---------- Program Details ---------- */}
-          <section className="w-full md:w-1/2 bg-stone-800 p-6 md:p-12 overflow-auto">
-            <div className="text-amber-200 space-y-1 text-base md:text-lg">
-              {/* Moved to top */}
-              
-
-              <h4 className="text-2xl md:text-4xl font-bold text-white mb-2">
+          {/* Program Details */}
+          <section className="w-full md:w-1/2 p-6 md:p-12 overflow-auto">
+            <div
+              className="space-y-3 text-black text-base md:text-lg border rounded-xl p-4"
+              style={{ borderColor: "#a57d6b", backgroundColor: "#f4ebe8" }}
+            >
+              <h4 className="text-2xl md:text-4xl font-bold mb-2 text-black">
                 Program Details
               </h4>
-              
+
               <p>
                 Course Fee: <span className="font-semibold">$35</span>
               </p>
 
-              <ul className="space-y-1">
+              <ul className="space-y-1 text-lg md:text-xl">
                 {[
                   "Only for Women's group",
                   "Two weekend interactive classes",
-                  "7 mins practices every day"
+                  "7 mins practices every day",
                 ].map((item) => (
                   <li key={item} className="flex items-start">
-                    <span className="mr-2">👉</span>
+                    <span className="mr-2 text-2xl">👉</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
 
-              <h3 className="text-2xl font-bold text-white mt-4">
+              <h3 className="text-2xl font-bold text-black mt-4">
                 Daily Practice
               </h3>
               <p>3 minutes in the morning</p>
               <p>3 minutes in the evening</p>
               <p>1 minute at bedtime</p>
 
-              <h3 className="text-2xl font-bold text-white mt-4">
+              <h3 className="text-2xl font-bold text-black mt-4">
                 KK Process
               </h3>
               <p>
                 Register for the course <br />
                 Complete the payment <br />
-                Complete the waiver form <br />
+                Complete the waiver form
               </p>
-
-              
-              
-              
             </div>
           </section>
 
-          {/* ---------- Welcome Modal ---------- */}
-          <section className="w-full md:w-1/2 bg-stone-800 p-4 flex items-center justify-center">
-            <div className="w-full max-w-md bg-stone-700 p-6 rounded-2xl shadow-xl text-center space-y-3 relative">
-              {/* Home icon in top left corner */}
+          {/* Welcome Modal */}
+          <section className="w-full md:w-1/2 p-4 flex items-center justify-center">
+            <div
+              className="w-full max-w-md p-6 rounded-2xl shadow-xl text-center space-y-3 border relative"
+              style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
+            >
               <div className="absolute top-2 right-2">
-                <button 
-                  onClick={() => router.push("/")} 
-                  className="p-2 bg-amber-700 hover:bg-amber-600 rounded-full transition-colors"
+                <button
+                  onClick={() => router.push("/")}
+                  className="p-2 rounded-full transition-colors"
+                  style={{ backgroundColor: "#b28d7b" }}
                   aria-label="Return to home"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10m-1 5h-1" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-black"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10m-1 5h-1"
+                    />
                   </svg>
                 </button>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                
-              </h3>
-              
+
               <button
                 onClick={handleJoinClick}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl mt-6"
+                className="w-full py-3 mt-4 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
+                style={{ backgroundColor: "#c49d8b" }}
               >
                 KK Registration
               </button>
+
               <div className="flex space-x-4">
                 <button
                   onClick={() => router.push("/register/step1")}
-                  className="flex-1 py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl"
+                  className="flex-1 py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
+                  style={{ backgroundColor: "#c49d8b" }}
                 >
                   Payment Steps
                 </button>
                 <button
                   onClick={() => router.push("/Waiver.pdf")}
-                  className="flex-1 py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl"
+                  className="flex-1 py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
+                  style={{ backgroundColor: "#c49d8b" }}
                 >
                   Waiver Form
                 </button>
@@ -144,28 +160,33 @@ export default function HomePage() {
 
               <button
                 onClick={() => router.push("/review")}
-                className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors text-lg md:text-xl"
+                className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
+                style={{ backgroundColor: "#c49d8b" }}
               >
                 KK Feedback
               </button>
-              
             </div>
           </section>
         </div>
 
-        {/* ------------ Bottom row: Benefits ------------ */}
-        <section className="w-full bg-stone-800 p-6 md:p-12 overflow-auto">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
-            KK Benefits
-          </h2>
-          <ul className="space-y-2 text-amber-200 leading-snug text-base md:text-lg">
-            {benefits.map((item, idx) => (
-              <li key={idx} className="flex items-start">
-                <span className="mr-2">👉</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+        {/* Bottom row: Benefits */}
+        <section className="w-full p-6 md:p-12 overflow-auto">
+          <div
+            className="border rounded-xl p-4"
+            style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
+          >
+            <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-3">
+              KK Benefits
+            </h2>
+            <ul className="space-y-2 text-black text-lg md:text-xl">
+              {benefits.map((item, idx) => (
+                <li key={idx} className="flex items-start">
+                  <span className="mr-2 text-2xl">👉</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
       </main>
     </>

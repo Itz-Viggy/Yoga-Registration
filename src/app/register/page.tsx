@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from 'next/image';
+import Image from "next/image";
 import StateDropdown from "@/components/statesdropdown";
 
 export default function RegisterPage() {
@@ -12,7 +12,7 @@ export default function RegisterPage() {
     lastname: "",
     state: "",
     code: "+1",
-    phone: ""
+    phone: "",
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -49,21 +49,43 @@ export default function RegisterPage() {
   };
 
   return (
-    <>
+    <div className="min-h-screen w-screen flex flex-col bg-white">
       
+      {/* Header */}
+      <header
+        className="w-full py-4 border-b relative"
+        style={{ borderColor: "#a57d6b", backgroundColor: "#a57d6b" }}
+      >
+        <div
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+          onClick={() => router.push("/kkhome")}
+        >
+          <Image
+            src="/Vethathri-Maharishi-1-removebg-preview.png"
+            alt="Kayakalpa Logo"
+            width={48}
+            height={48}
+          />
+        </div>
+        <h1 className="text-2xl font-bold text-center text-black">
+          Kayakalpa Registration
+        </h1>
+      </header>
 
-      <div className="min-h-screen flex items-start justify-center pt-4 bg-stone-800">
+      {/* Form Section */}
+      <div className="flex-1 flex items-start justify-center pt-6 p-4">
         <form
           onSubmit={handleSubmit}
-          className="max-w-md w-full bg-stone-700 p-8 rounded-xl shadow-lg"
+          className="max-w-md w-full p-8 rounded-xl shadow-lg border space-y-4"
+          style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
         >
-          <h2 className="text-2xl font-bold text-white-200 text-center mb-4">
-            Kayakalpa Registration 
+          <h2 className="text-2xl font-bold text-black text-center mb-2">
+            Kayakalpa Registration
           </h2>
 
           {/* First Name */}
-          <div className="mb-4">
-            <label htmlFor="firstname" className="block text-amber-200 mb-1">
+          <div>
+            <label htmlFor="firstname" className="block text-black mb-1">
               First Name
             </label>
             <input
@@ -76,14 +98,15 @@ export default function RegisterPage() {
               title="First name should contain letters only"
               value={formData.firstname}
               onChange={handleChange}
-              className="w-full border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
+              className="w-full border p-2 rounded bg-white text-black"
+              style={{ borderColor: "#a57d6b" }}
             />
           </div>
 
           {/* Last Name */}
-          <div className="mb-4">
-            <label htmlFor="lastname" className="block text-amber-200 mb-1">
-              Last Name <span className="text-amber-200">(Optional)</span>
+          <div>
+            <label htmlFor="lastname" className="block text-black mb-1">
+              Last Name <span className="text-black">(Optional)</span>
             </label>
             <input
               type="text"
@@ -94,13 +117,14 @@ export default function RegisterPage() {
               title="Last name should contain letters only"
               value={formData.lastname}
               onChange={handleChange}
-              className="w-full border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
+              className="w-full border p-2 rounded bg-white text-black"
+              style={{ borderColor: "#a57d6b" }}
             />
           </div>
 
-          {/* State Dropdown */}
-          <div className="mb-4">
-            <label htmlFor="state" className="block text-amber-200 mb-1">
+          {/* State */}
+          <div>
+            <label htmlFor="state" className="block text-black mb-1">
               State
             </label>
             <StateDropdown
@@ -110,15 +134,16 @@ export default function RegisterPage() {
             />
           </div>
 
-          {/* Phone with Country Code */}
-          <div className="mb-4">
-            <label className="block text-amber-200 mb-1">Phone Number</label>
+          {/* Phone */}
+          <div>
+            <label className="block text-black mb-1">Phone Number</label>
             <div className="flex space-x-2">
               <select
                 name="code"
                 value={formData.code}
                 onChange={handleChange}
-                className="border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
+                className="border p-2 rounded bg-white text-black"
+                style={{ borderColor: "#a57d6b" }}
               >
                 <option value="+1">+1 (US)</option>
                 <option value="+91">+91 (IN)</option>
@@ -131,37 +156,41 @@ export default function RegisterPage() {
                 title="Phone number must be 10 digits"
                 value={formData.phone}
                 onChange={handleChange}
-                className="flex-1 border border-amber-700 p-2 rounded bg-stone-700 text-amber-200"
+                className="flex-1 border p-2 rounded bg-white text-black"
+                style={{ borderColor: "#a57d6b" }}
                 placeholder="1234567890"
               />
             </div>
-            <p className="text-xs text-amber-200 mt-1">
+            <p className="text-xs text-black mt-1">
               Enter your 10 digit phone number.
             </p>
           </div>
 
           {error && (
-            <p className="text-red-500 text-center mb-4">{error}</p>
+            <p className="text-red-500 text-center">{error}</p>
           )}
 
+          {/* Buttons */}
           <div className="space-y-3">
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+              className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg"
+              style={{ backgroundColor: "#c49d8b" }}
             >
               {loading ? "Submitting..." : "Submit"}
             </button>
             <button
               type="button"
               onClick={handleBack}
-              className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+              className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg"
+              style={{ backgroundColor: "#c49d8b" }}
             >
               Back
             </button>
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 }
