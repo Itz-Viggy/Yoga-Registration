@@ -66,6 +66,16 @@ export default function HomePage() {
               <p className="text-black">
                 Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
               </p>
+              <p className="mt-2">
+                <a
+                  href="https://chat.whatsapp.com/HYePf24x6Qx9NCORBCoWeO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-bold underline hover:opacity-80"
+                >
+                  Click here for WhatsApp Group
+                </a>
+              </p>
               <button
                 onClick={handlePEClick}
                 className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
@@ -112,6 +122,16 @@ export default function HomePage() {
                 </p>
                 <p className="text-black">
                   Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
+                </p>
+                <p className="mt-2">
+                  <a
+                    href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black font-bold underline hover:opacity-80"
+                  >
+                    Click here for WhatsApp Group
+                  </a>
                 </p>
                 <button
                   onClick={handlePEClick}
