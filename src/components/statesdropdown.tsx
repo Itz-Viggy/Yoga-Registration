@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const states = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California",
@@ -10,7 +10,8 @@ const states = [
   "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma",
   "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
   "South Dakota", "Tennessee", "Texas", "Utah", "Vermont",
-  "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Other"
+  "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming",
+  "Other",
 ];
 
 interface StateDropdownProps {
@@ -19,19 +20,24 @@ interface StateDropdownProps {
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-const StateDropdown: React.FC<StateDropdownProps> = ({ name, value, onChange }) => {
+const StateDropdown: React.FC<StateDropdownProps> = ({
+  name,
+  value,
+  onChange,
+}) => {
   return (
     <select
       name={name}
       value={value}
       onChange={onChange}
-      className="w-full border border-amber-700 p-2 rounded text-amber-200 bg-stone-700"
+      className="w-full p-2 rounded border text-black"
+      style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
     >
-      <option value="" className="text-amber-500">
+      <option value="" className="text-black">
         Select your state
       </option>
       {states.map((state) => (
-        <option key={state} value={state}>
+        <option key={state} value={state} className="text-black">
           {state}
         </option>
       ))}
