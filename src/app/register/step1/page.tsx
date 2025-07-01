@@ -40,7 +40,7 @@ export default function Step1Page() {
       {/* Main Content */}
       <div className="flex-1 flex items-center justify-center p-4">
         <div
-          className="w-full max-w-md p-8 rounded-xl shadow-lg border text-center space-y-4"
+          className="w-full max-w-md p-8 rounded-xl shadow-lg border text-left space-y-4"
           style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
         >
           <h2 className="text-2xl font-bold text-black mb-4">
