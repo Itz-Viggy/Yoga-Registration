@@ -97,9 +97,9 @@ export default function HomePage() {
                 KK Process
               </h3>
               <p>
-                1) Register for the course <br />
-                2) Complete the payment <br />
-                3) Complete the waiver form
+                1. Register for the course <br />
+                2. Complete the payment <br />
+                3. Complete the waiver form
               </p>
             </div>
           </section>
