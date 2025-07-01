@@ -85,10 +85,10 @@ export default function PhysicalExercisePage() {
 
           {/* Participant Type */}
           <div className="mb-4">
-            <label className="block text-black mb-1">Are you a new or returning participant?</label>
+            <label className="block text-black mb-2 text-base">Are you a new or returning participant?</label>
             <div className="flex space-x-4 mt-2">
               {["New", "Returning"].map((type) => (
-                <label key={type} className="flex items-center text-black">
+                <label key={type} className="flex items-center text-black text-base">
                   <input
                     type="radio"
                     name="participantType"
@@ -106,7 +106,7 @@ export default function PhysicalExercisePage() {
 
           {/* First Name */}
           <div className="mb-4">
-            <label htmlFor="firstname" className="block text-black mb-1">
+            <label htmlFor="firstname" className="block text-black mb-2 text-base">
               First Name
             </label>
             <input
@@ -119,13 +119,13 @@ export default function PhysicalExercisePage() {
               title="First name should contain letters only"
               value={formData.firstname}
               onChange={handleChange}
-              className="w-full border p-2 rounded bg-white text-black border-[#a57d6b]"
+              className="w-full border p-2 rounded bg-white text-black border-[#a57d6b] text-base"
             />
           </div>
 
           {/* Last Name */}
           <div className="mb-4">
-            <label htmlFor="lastname" className="block text-black mb-1">
+            <label htmlFor="lastname" className="block text-black mb-2 text-base">
               Last Name <span className="text-black">(Optional)</span>
             </label>
             <input
@@ -137,13 +137,13 @@ export default function PhysicalExercisePage() {
               title="Last name should contain letters only"
               value={formData.lastname}
               onChange={handleChange}
-              className="w-full border p-2 rounded bg-white text-black border-[#a57d6b]"
+              className="w-full border p-2 rounded bg-white text-black border-[#a57d6b] text-base"
             />
           </div>
 
           {/* State */}
           <div className="mb-4">
-            <label htmlFor="state" className="block text-black mb-1">
+            <label htmlFor="state" className="block text-black mb-2 text-base">
               State
             </label>
             <StateDropdown
@@ -155,7 +155,7 @@ export default function PhysicalExercisePage() {
 
           {/* Gender */}
           <div className="mb-4">
-            <label htmlFor="gender" className="block text-black mb-1">
+            <label htmlFor="gender" className="block text-black mb-2 text-base">
               Gender
             </label>
             <select
@@ -164,7 +164,7 @@ export default function PhysicalExercisePage() {
               required
               value={formData.gender}
               onChange={handleChange}
-              className="w-full border p-2 rounded bg-white text-black border-[#a57d6b]"
+              className="w-full border p-2 rounded bg-white text-black border-[#a57d6b] text-base"
             >
               <option value="">Select your gender</option>
               <option value="Male">Male</option>
@@ -174,13 +174,13 @@ export default function PhysicalExercisePage() {
 
           {/* Phone */}
           <div className="mb-4">
-            <label className="block text-black mb-1">Phone Number</label>
+            <label className="block text-black mb-2 text-base">Phone Number</label>
             <div className="flex space-x-2">
               <select
                 name="code"
                 value={formData.code}
                 onChange={handleChange}
-                className="border p-2 rounded bg-white text-black border-[#a57d6b]"
+                className="border p-2 rounded bg-white text-black border-[#a57d6b] text-base"
               >
                 <option value="+1">+1 (US)</option>
                 <option value="+91">+91 (IN)</option>
@@ -193,11 +193,11 @@ export default function PhysicalExercisePage() {
                 title="Phone number must be 7 to 10 digits"
                 value={formData.phone}
                 onChange={handleChange}
-                className="flex-1 border p-2 rounded bg-white text-black border-[#a57d6b]"
+                className="flex-1 border p-2 rounded bg-white text-black border-[#a57d6b] text-base"
                 placeholder="1234567890"
               />
             </div>
-            <p className="text-xs text-black mt-1">
+            <p className="text-xs text-black mt-1 text-base">
               Enter your 10 digit phone number.
             </p>
           </div>
