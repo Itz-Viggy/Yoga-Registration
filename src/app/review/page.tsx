@@ -104,7 +104,7 @@ export default function FeedbackPage() {
           {/* Liked Best */}
           <div>
             <label htmlFor="likedBest" className="block text-black mb-1">
-              👉 What did you like best? <span className="text-red-500">*</span>
+              What did you like best? <span className="text-red-500">*</span>
             </label>
             <textarea
               id="likedBest"
