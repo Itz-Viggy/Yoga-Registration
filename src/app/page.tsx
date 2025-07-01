@@ -71,9 +71,9 @@ export default function HomePage() {
                   href="https://chat.whatsapp.com/HYePf24x6Qx9NCORBCoWeO"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black font-bold underline hover:opacity-80"
+                  className="text-blue-600 font-bold underline hover:opacity-80"
                 >
-                  Join Women's WhatsApp Group
+                  Please join Women's WhatsApp Group
                 </a>
               </p>
               <button
@@ -100,6 +100,16 @@ export default function HomePage() {
                 <p className="text-black">
                   Time: <span className="font-semibold">Saturday (8–9:30 AM) EST</span>
                 </p>
+                <p className="mt-2">
+                  <a
+                    href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue font-bold underline hover:opacity-80"
+                  >
+                    Please join KK's WhatsApp Group
+                  </a>
+                </p>
                 <button
                   onClick={handleKKClick}
                   className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
@@ -124,14 +134,14 @@ export default function HomePage() {
                   Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
                 </p>
                 <p className="mt-2">
-                  <a
-                    href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black font-bold underline hover:opacity-80"
-                  >
-                    Join Men's WhatsApp Group
-                  </a>
+                                  <a
+                  href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-bold underline hover:opacity-80"
+                >
+                  Please join Men's WhatsApp Group
+                </a>
                 </p>
                 <button
                   onClick={handlePEClick}
