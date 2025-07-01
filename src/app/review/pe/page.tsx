@@ -99,7 +99,7 @@ export default function FeedbackPage() {
 
           {/* Name */}
           <div>
-            <label htmlFor="name" className="block text-black mb-1">
+            <label htmlFor="name" className="block text-black mb-1 font-bold">
               Name <span className="text-red-500">*</span>
             </label>
             <input
@@ -125,7 +125,7 @@ export default function FeedbackPage() {
                 { label: "Women's Group", value: "female" },
                 { label: "Men's Group", value: "male" },
               ].map((group) => (
-                <label key={group.value} className="inline-flex items-center text-black">
+                <label key={group.value} className="inline-flex items-center text-black font-bold">
                   <input
                     type="radio"
                     name="gender"
@@ -143,7 +143,7 @@ export default function FeedbackPage() {
 
           {/* Liked Best */}
           <div>
-            <label htmlFor="likedBest" className="block text-black mb-1">
+            <label htmlFor="likedBest" className="block text-black mb-1 font-bold">
               What did you like best about the session? <span className="text-red-500">*</span>
             </label>
             <textarea
@@ -161,7 +161,7 @@ export default function FeedbackPage() {
 
           {/* Health Improvements */}
           <div>
-            <label htmlFor="improvements" className="block text-black mb-1">
+            <label htmlFor="improvements" className="block text-black mb-1 font-bold">
               Do you like to share any specific health improvements after SKY practices?
             </label>
             <textarea
@@ -178,7 +178,7 @@ export default function FeedbackPage() {
 
           {/* Rating */}
           <div>
-            <label htmlFor="rating" className="block text-black mb-1">
+            <label htmlFor="rating" className="block text-black mb-1 font-bold">
               How would you rate overall experience? <span className="text-red-500">*</span>
             </label>
             <select
@@ -200,7 +200,7 @@ export default function FeedbackPage() {
 
           {/* Suggestions */}
           <div>
-            <label htmlFor="suggestions" className="block text-black mb-1">
+            <label htmlFor="suggestions" className="block text-black mb-1 font-bold">
               Any other suggestions?
             </label>
             <textarea

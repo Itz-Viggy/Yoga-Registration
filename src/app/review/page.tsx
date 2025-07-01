@@ -83,7 +83,7 @@ export default function FeedbackPage() {
 
           {/* Name */}
           <div>
-            <label htmlFor="name" className="block text-black mb-1">
+            <label htmlFor="name" className="block text-black mb-1 font-bold">
               Name
             </label> 
             <input
@@ -103,7 +103,7 @@ export default function FeedbackPage() {
 
           {/* Liked Best */}
           <div>
-            <label htmlFor="likedBest" className="block text-black mb-1">
+            <label htmlFor="likedBest" className="block text-black mb-1 font-bold">
               What did you like best? <span className="text-red-500">*</span>
             </label>
             <textarea
@@ -121,7 +121,7 @@ export default function FeedbackPage() {
 
           {/* Improvements */}
           <div>
-            <label htmlFor="improvements" className="block text-black mb-1">
+            <label htmlFor="improvements" className="block text-black mb-1 font-bold">
               Any health improvements to share?
             </label>
             <textarea
@@ -138,7 +138,7 @@ export default function FeedbackPage() {
 
           {/* Rating */}
           <div>
-            <label htmlFor="rating" className="block text-black mb-1">
+            <label htmlFor="rating" className="block text-black mb-1 font-bold">
               How would you rate the session? <span className="text-red-500">*</span>
             </label>
             <input
@@ -156,7 +156,7 @@ export default function FeedbackPage() {
 
           {/* Suggestions */}
           <div>
-            <label htmlFor="suggestions" className="block text-black mb-1">
+            <label htmlFor="suggestions" className="block text-black mb-1 font-bold">
               Any other suggestions?
             </label>
             <textarea

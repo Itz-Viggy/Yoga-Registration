@@ -85,7 +85,7 @@ export default function RegisterPage() {
 
           {/* First Name */}
           <div>
-            <label htmlFor="firstname" className="block text-black mb-1">
+            <label htmlFor="firstname" className="block text-black mb-1 font-bold">
               First Name
             </label>
             <input
@@ -105,7 +105,7 @@ export default function RegisterPage() {
 
           {/* Last Name */}
           <div>
-            <label htmlFor="lastname" className="block text-black mb-1">
+            <label htmlFor="lastname" className="block text-black mb-1 font-bold">
               Last Name <span className="text-black">(Optional)</span>
             </label>
             <input
@@ -124,7 +124,7 @@ export default function RegisterPage() {
 
           {/* State */}
           <div>
-            <label htmlFor="state" className="block text-black mb-1">
+            <label htmlFor="state" className="block text-black mb-1 font-bold">
               State
             </label>
             <StateDropdown
@@ -136,7 +136,7 @@ export default function RegisterPage() {
 
           {/* Phone */}
           <div>
-            <label className="block text-black mb-1">Phone Number</label>
+            <label className="block text-black font-bold mb-1">Phone Number</label>
             <div className="flex space-x-2">
               <select
                 name="code"
