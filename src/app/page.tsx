@@ -37,13 +37,13 @@ export default function HomePage() {
             <p className="mb-4 text-sm md:text-base text-black">
               Join us for an exclusive yoga experience.
             </p>
-            <p className="mt-1 font-semibold text-black">
-              Click here for our{" "}
+            <p className="mt-1 font-semibold text-blue-600">
+              Checkout our{" "}
               <a
                 href="https://docs.google.com/document/d/1d-BmCclOnpf-NKeReSs7jxSTij4LKNDAN9PiQGUNMaY/edit"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline text-black"
+                className="underline text-blue-600"
               >
                 Testimonials
               </a>
@@ -107,7 +107,7 @@ export default function HomePage() {
                     rel="noopener noreferrer"
                     className="text-blue-600 font-bold underline hover:opacity-80"
                   >
-                    Please join KK's WhatsApp Group
+                    Please join KK WhatsApp Group
                   </a>
                 </p>
                 <button
