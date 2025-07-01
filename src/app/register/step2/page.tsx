@@ -52,7 +52,9 @@ export default function Step2Page() {
           <p className="text-black">
             Please print out the waiver form by clicking the button below.
           </p>
-
+          <p className="text-black font-bold mb-4">
+            Note: Please download the waiver form, fill it out, and send it to the volunteer
+          </p>
           <a
             href="/Waiver.pdf"
             target="_blank"
