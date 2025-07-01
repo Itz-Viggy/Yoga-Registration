@@ -99,7 +99,8 @@ export default function HomePage() {
               <p className="text-lg md:text-xl">
                 1. Register for the course <br />
                 2. Complete the payment <br />
-                3. Complete the waiver form
+                3. Complete the waiver form <br />
+                4. Send the payment confirmation and waiver form to the volunteer
               </p>
             </div>
           </section>
