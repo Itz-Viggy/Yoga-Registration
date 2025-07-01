@@ -122,7 +122,7 @@ export default function FeedbackPage() {
           {/* Improvements */}
           <div>
             <label htmlFor="improvements" className="block text-black mb-1">
-              👉 Any health improvements to share?
+              Any health improvements to share?
             </label>
             <textarea
               id="improvements"
@@ -139,7 +139,7 @@ export default function FeedbackPage() {
           {/* Rating */}
           <div>
             <label htmlFor="rating" className="block text-black mb-1">
-              👉 How would you rate the session? <span className="text-red-500">*</span>
+              How would you rate the session? <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -157,7 +157,7 @@ export default function FeedbackPage() {
           {/* Suggestions */}
           <div>
             <label htmlFor="suggestions" className="block text-black mb-1">
-              👉 Any other suggestions?
+              Any other suggestions?
             </label>
             <textarea
               id="suggestions"

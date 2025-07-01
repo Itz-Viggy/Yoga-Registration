@@ -143,7 +143,7 @@ export default function FeedbackPage() {
           {/* Liked Best */}
           <div>
             <label htmlFor="likedBest" className="block text-black mb-1">
-              👉 What did you like best about the session? <span className="text-red-500">*</span>
+              What did you like best about the session? <span className="text-red-500">*</span>
             </label>
             <textarea
               id="likedBest"
@@ -161,7 +161,7 @@ export default function FeedbackPage() {
           {/* Health Improvements */}
           <div>
             <label htmlFor="improvements" className="block text-black mb-1">
-              👉 Do you like to share any specific health improvements after SKY practices?
+              Do you like to share any specific health improvements after SKY practices?
             </label>
             <textarea
               id="improvements"
@@ -178,7 +178,7 @@ export default function FeedbackPage() {
           {/* Rating */}
           <div>
             <label htmlFor="rating" className="block text-black mb-1">
-              👉 How would you rate overall experience? <span className="text-red-500">*</span>
+              How would you rate overall experience? <span className="text-red-500">*</span>
             </label>
             <select
               id="rating"
@@ -200,7 +200,7 @@ export default function FeedbackPage() {
           {/* Suggestions */}
           <div>
             <label htmlFor="suggestions" className="block text-black mb-1">
-              👉 Any other suggestions?
+              Any other suggestions?
             </label>
             <textarea
               id="suggestions"

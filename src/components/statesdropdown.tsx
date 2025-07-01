@@ -31,7 +31,7 @@ const StateDropdown: React.FC<StateDropdownProps> = ({
       value={value}
       onChange={onChange}
       className="w-full p-2 rounded border text-black"
-      style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
+      style={{ backgroundColor: "white", borderColor: "#a57d6b" }}
     >
       <option value="" className="text-black">
         Select your state
