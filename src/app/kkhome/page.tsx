@@ -62,14 +62,14 @@ export default function HomePage() {
           {/* Program Details */}
           <section className="w-full md:w-1/2 p-6 md:p-12 overflow-auto">
             <div
-              className="space-y-3 text-black text-base md:text-lg border rounded-xl p-4"
+              className="space-y-3 text-black text-lg md:text-xl border rounded-xl p-4"
               style={{ borderColor: "#a57d6b", backgroundColor: "#f4ebe8" }}
             >
               <h4 className="text-2xl md:text-4xl font-bold mb-2 text-black">
                 Program Details
               </h4>
 
-              <p>
+              <p className="text-lg md:text-xl">
                 Course Fee: <span className="font-semibold">$35</span>
               </p>
 
@@ -89,14 +89,14 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-black mt-4">
                 Daily Practice
               </h3>
-              <p>3 minutes in the morning</p>
-              <p>3 minutes in the evening</p>
-              <p>1 minute at bedtime</p>
+              <p className="text-lg md:text-xl">3 minutes in the morning</p>
+              <p className="text-lg md:text-xl">3 minutes in the evening</p>
+              <p className="text-lg md:text-xl">1 minute at bedtime</p>
 
               <h3 className="text-2xl font-bold text-black mt-4">
                 KK Process
               </h3>
-              <p>
+              <p className="text-lg md:text-xl">
                 1. Register for the course <br />
                 2. Complete the payment <br />
                 3. Complete the waiver form
