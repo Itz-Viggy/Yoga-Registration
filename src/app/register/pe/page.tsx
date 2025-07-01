@@ -85,7 +85,7 @@ export default function PhysicalExercisePage() {
 
           {/* Participant Type */}
           <div className="mb-4">
-            <label className="block text-black mb-2 text-base">Are you a new or returning participant?</label>
+            <label className="block text-black mb-2 text-base font-bold">Are you a new or returning participant?</label>
             <div className="flex space-x-4 mt-2">
               {["New", "Returning"].map((type) => (
                 <label key={type} className="flex items-center text-black text-base">
@@ -106,7 +106,7 @@ export default function PhysicalExercisePage() {
 
           {/* First Name */}
           <div className="mb-4">
-            <label htmlFor="firstname" className="block text-black mb-2 text-base">
+            <label htmlFor="firstname" className="block text-black mb-2 text-base font-bold">
               First Name
             </label>
             <input
@@ -125,7 +125,7 @@ export default function PhysicalExercisePage() {
 
           {/* Last Name */}
           <div className="mb-4">
-            <label htmlFor="lastname" className="block text-black mb-2 text-base">
+            <label htmlFor="lastname" className="block text-black mb-2 text-base font-bold">
               Last Name <span className="text-black">(Optional)</span>
             </label>
             <input
@@ -143,7 +143,7 @@ export default function PhysicalExercisePage() {
 
           {/* State */}
           <div className="mb-4">
-            <label htmlFor="state" className="block text-black mb-2 text-base">
+            <label htmlFor="state" className="block text-black mb-2 text-base font-bold">
               State
             </label>
             <StateDropdown
@@ -155,7 +155,7 @@ export default function PhysicalExercisePage() {
 
           {/* Gender */}
           <div className="mb-4">
-            <label htmlFor="gender" className="block text-black mb-2 text-base">
+            <label htmlFor="gender" className="block text-black mb-2 text-base font-bold">
               Gender
             </label>
             <select
@@ -174,7 +174,7 @@ export default function PhysicalExercisePage() {
 
           {/* Phone */}
           <div className="mb-4">
-            <label className="block text-black mb-2 text-base">Phone Number</label>
+            <label className="block text-black mb-2 text-base font-bold">Phone Number</label>
             <div className="flex space-x-2">
               <select
                 name="code"
