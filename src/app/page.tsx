@@ -102,7 +102,7 @@ export default function HomePage() {
                 </p>
                 <p className="mt-2">
                   <a
-                    href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
+                    href="https://chat.whatsapp.com/GJqpUBFwNjOJCZEGpPDf4U?mode=r_t"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 font-bold underline hover:opacity-80"
@@ -135,7 +135,7 @@ export default function HomePage() {
                 </p>
                 <p className="mt-2">
                 <a
-                  href="https://chat.whatsapp.com/GJqpUBFwNjOJCZEGpPDf4U?mode=r_t"
+                  href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 font-bold underline hover:opacity-80"
