@@ -62,6 +62,9 @@ export default function Step1Page() {
           <p className="text-black font-bold mb-4">
             "Name - Women’s KK Batch"
           </p>
+          <p className="text-black font-bold mb-4">
+            Note: Please take a screenshot of the payment confirmation and send it to the volunteer
+          </p>
 
           <div className="flex flex-col space-y-3">
             <button
