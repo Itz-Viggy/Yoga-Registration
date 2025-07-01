@@ -78,7 +78,7 @@ export default function FeedbackPage() {
           style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
         >
           <h2 className="text-2xl font-bold text-black text-center">
-            We Value Your Feedback
+         
           </h2>
 
           {/* Name */}
