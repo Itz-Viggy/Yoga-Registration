@@ -93,7 +93,7 @@ export default function FeedbackPage() {
           </div>
 
           <h2 className="text-2xl font-bold text-black text-center">
-            Physical Exercise Feedback
+           
           </h2>
 
           {/* Name */}
