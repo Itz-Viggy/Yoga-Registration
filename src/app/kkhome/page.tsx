@@ -182,7 +182,7 @@ export default function HomePage() {
             <ul className="space-y-2 text-black text-lg md:text-xl">
               {benefits.map((item, idx) => (
                 <li key={idx} className="flex items-start">
-                  <span className="mr-2 text-2xl">👉</span>
+                  <span className="mr-2 text-2xl">●</span>
                   <span>{item}</span>
                 </li>
               ))}
