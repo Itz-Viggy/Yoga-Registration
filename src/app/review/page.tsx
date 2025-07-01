@@ -85,7 +85,7 @@ export default function FeedbackPage() {
           <div>
             <label htmlFor="name" className="block text-black mb-1">
               Name
-            </label>
+            </label> 
             <input
               type="text"
               id="name"
