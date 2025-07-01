@@ -78,7 +78,7 @@ export default function Step2Page() {
               className="flex-1 py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg"
               style={{ backgroundColor: "#c49d8b" }}
             >
-              Next
+              Done
             </button>
           </div>
         </div>
