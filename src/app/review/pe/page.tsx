@@ -66,7 +66,8 @@ export default function FeedbackPage() {
         </div>
         <h1 className="text-2xl font-bold text-center text-black">
           
-          PE Feedback
+          Physical Exercise <br />
+          Feedback
         </h1>
       </header>
 

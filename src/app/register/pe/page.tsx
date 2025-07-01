@@ -67,7 +67,7 @@ export default function PhysicalExercisePage() {
           />
         </div>
         <h1 className="text-2xl font-bold text-center text-black">
-          SKY Yoga <br />
+          
           Physical Exercise <br /> Registration
         </h1>
       </header>
@@ -80,7 +80,7 @@ export default function PhysicalExercisePage() {
           style={{ borderColor: "#a57d6b" }}
         >
           <h2 className="text-2xl font-bold text-black mb-6 text-center">
-            PE Registration Form
+            
           </h2>
 
           {/* Participant Type */}
