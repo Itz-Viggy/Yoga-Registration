@@ -36,7 +36,7 @@ export default function HomePage() {
       {/* Header */}
       <header
         className="w-full py-4 border-b relative"
-        style={{ borderColor: "#a57d6b", backgroundColor: "#a57d6b" }}
+        style={{ borderColor: "#a57d6b", backgroundColor: "white" }}
       >
         <div
           className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
@@ -150,7 +150,7 @@ export default function HomePage() {
                   Payment Steps
                 </button>
                 <button
-                  onClick={() => router.push("/Waiver.pdf")}
+                  onClick={() => window.open("/Waiver.pdf", "_blank")}
                   className="flex-1 py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                   style={{ backgroundColor: "#c49d8b" }}
                 >

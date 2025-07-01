@@ -73,7 +73,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="text-black font-bold underline hover:opacity-80"
                 >
-                  Click here for WhatsApp Group
+                  Join Women's WhatsApp Group
                 </a>
               </p>
               <button
@@ -130,7 +130,7 @@ export default function HomePage() {
                     rel="noopener noreferrer"
                     className="text-black font-bold underline hover:opacity-80"
                   >
-                    Click here for WhatsApp Group
+                    Join Men's WhatsApp Group
                   </a>
                 </p>
                 <button

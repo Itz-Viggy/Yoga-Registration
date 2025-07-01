@@ -27,7 +27,7 @@ export default function HomePage() {
   return (
     <>
       {/* Header */}
-      <header className="w-full py-4 border-b relative" style={{ borderColor: "#a57d6b", backgroundColor: "#a57d6b", color:"#a57d6b" }}>
+      <header className="w-full py-4 border-b relative" style={{ borderColor: "#a57d6b", backgroundColor: "white", color:"#a57d6b" }}>
         <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
           <Image
             src="/Vethathri-Maharishi-1-removebg-preview.png"

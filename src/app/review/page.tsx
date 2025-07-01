@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function FeedbackPage() {
   const router = useRouter();
@@ -47,21 +47,43 @@ export default function FeedbackPage() {
   };
 
   return (
-    <>
+    <div className="min-h-screen w-screen flex flex-col bg-white">
       
+      {/* Header */}
+      <header
+        className="w-full py-4 border-b relative"
+        style={{ borderColor: "#a57d6b", backgroundColor: "white" }}
+      >
+        <div
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+          onClick={() => router.push("/kkhome")}
+        >
+          <Image
+            src="/Vethathri-Maharishi-1-removebg-preview.png"
+            alt="Kayakalpa Logo"
+            width={48}
+            height={48}
+          />
+        </div>
+        <h1 className="text-2xl font-bold text-center text-black">
+          Kayakalpa Feedback
+        </h1>
+      </header>
 
-      <div className="min-h-screen flex items-start justify-center pt-4 bg-stone-800 p-4">
+      {/* Form Section */}
+      <div className="flex-1 flex items-center justify-center p-4">
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-lg bg-stone-700 p-8 rounded-xl shadow-lg space-y-6"
+          className="w-full max-w-lg p-8 rounded-xl shadow-lg border space-y-6"
+          style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
         >
-          <h2 className="text-2xl font-bold text-white-200 text-center mb-4">
-            Kayakalpa Feedback 
+          <h2 className="text-2xl font-bold text-black text-center">
+            We Value Your Feedback
           </h2>
 
           {/* Name */}
           <div>
-            <label htmlFor="name" className="block text-amber-200 mb-1">
+            <label htmlFor="name" className="block text-black mb-1">
               Name
             </label>
             <input
@@ -71,34 +93,36 @@ export default function FeedbackPage() {
               required
               pattern="^[A-Za-z\s\.]+$"
               title="Please enter letters, spaces or dots only"
-              placeholder="Name"
+              placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full border border-amber-700 bg-stone-700 text-amber-200 p-2 rounded"
+              className="w-full border p-2 rounded bg-white text-black"
+              style={{ borderColor: "#a57d6b" }}
             />
           </div>
 
-          {/* What did you like best */}
+          {/* Liked Best */}
           <div>
-            <label htmlFor="likedBest" className="block text-amber-200 mb-1">
-              👉 What did you like best about the session? <span className="text-amber-400">*</span>
+            <label htmlFor="likedBest" className="block text-black mb-1">
+              👉 What did you like best? <span className="text-red-500">*</span>
             </label>
             <textarea
               id="likedBest"
               name="likedBest"
               required
               rows={3}
-              placeholder="Your feedback..."
+              placeholder="Your thoughts..."
               value={formData.likedBest}
               onChange={handleChange}
-              className="w-full border border-amber-700 bg-stone-700 text-amber-200 p-2 rounded"
+              className="w-full border p-2 rounded bg-white text-black"
+              style={{ borderColor: "#a57d6b" }}
             />
           </div>
 
-          {/* Health improvements */}
+          {/* Improvements */}
           <div>
-            <label htmlFor="improvements" className="block text-amber-200 mb-1">
-              👉 Do you like to share any specific health improvements after SKY practices?
+            <label htmlFor="improvements" className="block text-black mb-1">
+              👉 Any health improvements to share?
             </label>
             <textarea
               id="improvements"
@@ -107,40 +131,43 @@ export default function FeedbackPage() {
               placeholder="Your feedback..."
               value={formData.improvements}
               onChange={handleChange}
-              className="w-full border border-amber-700 bg-stone-700 text-amber-200 p-2 rounded"
+              className="w-full border p-2 rounded bg-white text-black"
+              style={{ borderColor: "#a57d6b" }}
             />
           </div>
 
           {/* Rating */}
           <div>
-            <label htmlFor="rating" className="block text-amber-200 mb-1">
-              👉 How would you rate overall experience? <span className="text-amber-400">*</span>
+            <label htmlFor="rating" className="block text-black mb-1">
+              👉 How would you rate the session? <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
               id="rating"
               name="rating"
               required
-              placeholder="e.g., Well Organized"
+              placeholder="e.g., Excellent, Good, Needs Improvement"
               value={formData.rating}
               onChange={handleChange}
-              className="w-full border border-amber-700 bg-stone-700 text-amber-200 p-2 rounded"
+              className="w-full border p-2 rounded bg-white text-black"
+              style={{ borderColor: "#a57d6b" }}
             />
           </div>
 
-          {/* Other suggestions */}
+          {/* Suggestions */}
           <div>
-            <label htmlFor="suggestions" className="block text-amber-200 mb-1">
+            <label htmlFor="suggestions" className="block text-black mb-1">
               👉 Any other suggestions?
             </label>
             <textarea
               id="suggestions"
               name="suggestions"
               rows={3}
-              placeholder="Your feedback..."
+              placeholder="More ideas..."
               value={formData.suggestions}
               onChange={handleChange}
-              className="w-full border border-amber-700 bg-stone-700 text-amber-200 p-2 rounded"
+              className="w-full border p-2 rounded bg-white text-black"
+              style={{ borderColor: "#a57d6b" }}
             />
           </div>
 
@@ -148,24 +175,27 @@ export default function FeedbackPage() {
             <p className="text-red-500 text-center">{error}</p>
           )}
 
+          {/* Buttons */}
           <div className="space-y-3">
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+              className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg"
+              style={{ backgroundColor: "#c49d8b" }}
             >
               {loading ? "Submitting..." : "Submit Feedback"}
             </button>
             <button
               type="button"
               onClick={handleBack}
-              className="w-full py-3 px-4 bg-amber-700 text-white rounded-full hover:bg-amber-600 transition-colors"
+              className="w-full py-3 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg"
+              style={{ backgroundColor: "#c49d8b" }}
             >
               Back
             </button>
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 }

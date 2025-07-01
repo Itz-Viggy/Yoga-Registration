@@ -54,7 +54,7 @@ export default function RegisterPage() {
       {/* Header */}
       <header
         className="w-full py-4 border-b relative"
-        style={{ borderColor: "#a57d6b", backgroundColor: "#a57d6b" }}
+        style={{ borderColor: "#a57d6b", backgroundColor: "white" }}
       >
         <div
           className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
