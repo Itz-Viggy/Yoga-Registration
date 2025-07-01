@@ -119,7 +119,7 @@ export default function FeedbackPage() {
 
           {/* Gender */}
           <div>
-            <label className="block text-black mb-1">Group <span className="text-red-500">*</span></label>
+            <label className="block text-black mb-1">Select your group <span className="text-red-500">*</span></label>
             <div className="flex space-x-4">
               {[
                 { label: "Women's Group", value: "female" },
