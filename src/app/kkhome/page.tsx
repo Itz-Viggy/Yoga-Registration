@@ -50,7 +50,8 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-2xl font-bold text-center text-black">
-          Kayakalpa Registration (KK)
+          Kayakalpa Registration <br /> 
+          (KK)
         </h1>
       </header>
 
@@ -79,7 +80,7 @@ export default function HomePage() {
                   "7 mins practices every day",
                 ].map((item) => (
                   <li key={item} className="flex items-start">
-                    <span className="mr-2 text-2xl">👉</span>
+                    <span className="mr-2 text-2xl text-black">●</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -96,9 +97,9 @@ export default function HomePage() {
                 KK Process
               </h3>
               <p>
-                Register for the course <br />
-                Complete the payment <br />
-                Complete the waiver form
+                1) Register for the course <br />
+                2) Complete the payment <br />
+                3) Complete the waiver form
               </p>
             </div>
           </section>
