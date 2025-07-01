@@ -119,13 +119,13 @@ export default function FeedbackPage() {
 
           {/* Gender */}
           <div>
-            <label className="block text-black mb-1">Select your group <span className="text-red-500">*</span></label>
+            <label className="block text-black mb-1 font-bold">Select your group <span className="text-red-500">*</span></label>
             <div className="flex space-x-4">
               {[
                 { label: "Women's Group", value: "female" },
                 { label: "Men's Group", value: "male" },
               ].map((group) => (
-                <label key={group.value} className="inline-flex items-center text-black font-bold">
+                <label key={group.value} className="inline-flex items-center text-black ">
                   <input
                     type="radio"
                     name="gender"
