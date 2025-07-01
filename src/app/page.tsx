@@ -134,8 +134,8 @@ export default function HomePage() {
                   Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
                 </p>
                 <p className="mt-2">
-                                  <a
-                  href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
+                <a
+                  href="https://chat.whatsapp.com/GJqpUBFwNjOJCZEGpPDf4U?mode=r_t"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 font-bold underline hover:opacity-80"
