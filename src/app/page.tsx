@@ -55,7 +55,7 @@ export default function HomePage() {
 
             <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
               <p className="mb-2 text-lg md:text-xl font-bold text-black">
-                Women's Physical Exercise
+                Women's Physical Exercise (PE)
               </p>
               <p className="text-black">
                 When: <span className="font-semibold">(July 15 - August 31) 2025</span>
@@ -81,7 +81,7 @@ export default function HomePage() {
                 className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                 style={{ backgroundColor: "#c49d8b" }}
               >
-                Physical Exercise
+                PE Registration/Feedback
               </button>
             </div>
 
@@ -115,14 +115,14 @@ export default function HomePage() {
                   className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                   style={{ backgroundColor: "#c49d8b" }}
                 >
-                  Kayakalpa Practices
+                  KK Registration/Feedback
                 </button>
               </div>
 
               {/* Men's PE */}
               <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
                 <p className="mb-2 text-lg md:text-xl font-bold text-black">
-                  Men's Physical Exercise
+                  Men's Physical Exercise (PE)
                 </p>
                 <p className="text-black">
                   When: <span className="font-semibold">TBD</span>
@@ -148,7 +148,7 @@ export default function HomePage() {
                   className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                   style={{ backgroundColor: "#c49d8b" }}
                 >
-                  Physical Exercise
+                  PE Registration/Feedback
                 </button>
               </div>
             </div>
