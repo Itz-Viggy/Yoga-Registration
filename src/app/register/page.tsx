@@ -80,7 +80,7 @@ export default function RegisterPage() {
           style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}
         >
           <h2 className="text-2xl font-bold text-black text-center mb-2">
-            Kayakalpa Registration
+            
           </h2>
 
           {/* First Name */}
