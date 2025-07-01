@@ -89,9 +89,9 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-black mt-4">
                 Daily Practice
               </h3>
-              <p className="text-lg md:text-xl">3 minutes in the morning</p>
-              <p className="text-lg md:text-xl">3 minutes in the evening</p>
-              <p className="text-lg md:text-xl">1 minute at bedtime</p>
+              <p className="text-lg md:text-xl">● 3 minutes in the morning</p>
+              <p className="text-lg md:text-xl">● 3 minutes in the evening</p>
+              <p className="text-lg md:text-xl">● 1 minute at bedtime</p>
 
               <h3 className="text-2xl font-bold text-black mt-4">
                 KK Process
