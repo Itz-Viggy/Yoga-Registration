@@ -105,7 +105,7 @@ export default function HomePage() {
                     href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue font-bold underline hover:opacity-80"
+                    className="text-blue-600 font-bold underline hover:opacity-80"
                   >
                     Please join KK's WhatsApp Group
                   </a>
