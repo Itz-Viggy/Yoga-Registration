@@ -89,7 +89,7 @@ export default function HomePage() {
               {/* Kayakalpa */}
               <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
                 <p className="mb-2 text-lg md:text-xl font-bold text-black">
-                  Women's Kayakalpa Practices
+                  Women's Kayakalpa Practices (KK)
                 </p>
                 <p className="text-black">
                   When: <span className="font-semibold">November 2025</span>
