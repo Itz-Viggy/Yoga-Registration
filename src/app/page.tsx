@@ -66,6 +66,9 @@ export default function HomePage() {
               <p className="text-black">
                 Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
               </p>
+              <p className="text-black">
+                Cost: <span className="font-semibold">$0</span>
+              </p>
               <p className="mt-2">
                 <a
                   href="https://chat.whatsapp.com/HYePf24x6Qx9NCORBCoWeO"
@@ -100,6 +103,9 @@ export default function HomePage() {
                 <p className="text-black">
                   Time: <span className="font-semibold">Saturday (8–9:30 AM) EST</span>
                 </p>
+                 <p className="text-black">
+                Cost: <span className="font-semibold">$35</span>
+              </p>
                 <p className="mt-2">
                   <a
                     href="https://chat.whatsapp.com/GJqpUBFwNjOJCZEGpPDf4U?mode=r_t"
@@ -133,6 +139,9 @@ export default function HomePage() {
                 <p className="text-black">
                   Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
                 </p>
+                 <p className="text-black">
+                Cost: <span className="font-semibold">$0</span>
+              </p>
                 <p className="mt-2">
                 <a
                   href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
