@@ -68,7 +68,7 @@ export default function HomePage() {
               </p>
               <p className="text-black">
               <span className="font-semibold">No Course Fees</span>
-                <span className="font-semibold">**Run by Volunteers**</span>
+                <span className="font-semibold">**Run by SKY Masters and Volunteers**</span>
               </p>
               <p className="mt-2">
                 <a
@@ -104,7 +104,7 @@ export default function HomePage() {
                 </p>
                  <p className="text-black">
                  <span className="font-semibold">No Course Fees</span>
-                 <span className="font-semibold">**Run by Volunteers**</span>
+                 <span className="font-semibold">**Run by SKY Masters and Volunteers**</span>
                 </p>
                 <p className="mt-2">
                 <a
