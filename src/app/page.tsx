@@ -67,6 +67,7 @@ export default function HomePage() {
                 Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
               </p>
               <p className="text-black">
+              <span className="font-semibold">No Course Fees</span>
                 <span className="font-semibold">**Run by Volunteers**</span>
               </p>
               <p className="mt-2">
@@ -102,6 +103,7 @@ export default function HomePage() {
                   Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
                 </p>
                  <p className="text-black">
+                 <span className="font-semibold">No Course Fees</span>
                  <span className="font-semibold">**Run by Volunteers**</span>
                 </p>
                 <p className="mt-2">
