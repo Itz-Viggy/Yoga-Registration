@@ -87,7 +87,41 @@ export default function HomePage() {
                 PE Registration/Feedback
               </button>
             </div>
-
+            {/* Men's PE */}
+            <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
+                <p className="mb-2 text-lg md:text-xl font-bold text-black">
+                  Men's Physical Exercise (PE)
+                </p>
+                <p className="text-black">
+                  When: <span className="font-semibold">TBD</span>
+                </p>
+                <p className="text-black">
+                  Where: <span className="font-semibold">Zoom</span>
+                </p>
+                <p className="text-black">
+                  Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
+                </p>
+                 <p className="text-black">
+                 <span className="font-semibold">**Run by Volunteers**</span>
+                </p>
+                <p className="mt-2">
+                <a
+                  href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-bold underline hover:opacity-80"
+                >
+                  Please join Men's WhatsApp Group
+                </a>
+                </p>
+                <button
+                  onClick={handlePEClick}
+                  className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
+                  style={{ backgroundColor: "#c49d8b" }}
+                >
+                  PE Registration/Feedback
+                </button>
+              </div>
             <div className="flex flex-col md:flex-row gap-4 mb-4">
               {/* Kayakalpa */}
               <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
@@ -125,41 +159,7 @@ export default function HomePage() {
                 </button>
               </div>
 
-              {/* Men's PE */}
-              <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
-                <p className="mb-2 text-lg md:text-xl font-bold text-black">
-                  Men's Physical Exercise (PE)
-                </p>
-                <p className="text-black">
-                  When: <span className="font-semibold">TBD</span>
-                </p>
-                <p className="text-black">
-                  Where: <span className="font-semibold">Zoom</span>
-                </p>
-                <p className="text-black">
-                  Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
-                </p>
-                 <p className="text-black">
-                 <span className="font-semibold">**Run by Volunteers**</span>
-              </p>
-                <p className="mt-2">
-                <a
-                  href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 font-bold underline hover:opacity-80"
-                >
-                  Please join Men's WhatsApp Group
-                </a>
-                </p>
-                <button
-                  onClick={handlePEClick}
-                  className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
-                  style={{ backgroundColor: "#c49d8b" }}
-                >
-                  PE Registration/Feedback
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
