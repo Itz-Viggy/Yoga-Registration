@@ -55,10 +55,10 @@ export default function HomePage() {
 
     <ul className="space-y-3 text-lg md:text-xl lg:text-2xl">
       {[
-        "We don't charge any fees for physical exercises run by this online group for 8 weeks",
+        "We don't charge any fees for physical exercises run by this online group for 8 weeks. Once a week.",
         "We completed 10 Batches, around 500 students learned physical exercises with our online group",
         "We have 4 masters and 10 volunteers to run this online group class",
-        "Each Batch runs for 8 weeks - 1 day a week",
+     
         "The group count is usually around 20-25 students in each class",
         "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day",
         "You can interact with Masters and Volunteers at the end of the class to calrify questions",
