@@ -15,7 +15,7 @@ const states = [
 ];
 
 interface StateDropdownProps {
-  name?: string;
+  name: string;
   value: string;
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 }
