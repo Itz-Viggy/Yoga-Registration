@@ -66,7 +66,7 @@ export default function HomePage() {
               <p className="text-black">
                 Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
               </p>
-              <p className="text-black">
+              <p className="text-black mt-2">
               <span className="font-semibold">No Course Fees</span>
                 <span className="font-semibold">**Run by SKY Masters and Volunteers**</span>
               </p>
@@ -99,13 +99,17 @@ export default function HomePage() {
                 <p className="text-black">
                   Where: <span className="font-semibold">Zoom</span>
                 </p>
-                <p className="text-black">
+               <p className="text-black">
                   Time: <span className="font-semibold">Saturday (9:30 - 10:30 AM) EST</span>
                 </p>
-                 <p className="text-black">
-                 <span className="font-semibold">No Course Fees</span>
-                 <span className="font-semibold">**Run by SKY Masters and Volunteers**</span>
+
+                
+
+                <p className="text-black mt-2">
+                  <span className="font-semibold">No Course Fees</span> 
+                  <span className="font-semibold">**Run by SKY Masters and Volunteers** </span>
                 </p>
+
                 <p className="mt-2">
                 <a
                   href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
