@@ -12,7 +12,7 @@ export default function Step3Page() {
   };
 
   const handleNext = () => {
-    router.push("/register/success");
+    router.push("/register/success?from=kk");
   };
 
   return (

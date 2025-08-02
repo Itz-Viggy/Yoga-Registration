@@ -36,7 +36,7 @@ export default function PhysicalExercisePage() {
         body: JSON.stringify(formData),
       });
       if (!res.ok) throw new Error("Failed to save data");
-      router.push("/register/success");
+      router.push("/register/success?from=pe");
     } catch (err: any) {
       setError(err.message);
     } finally {

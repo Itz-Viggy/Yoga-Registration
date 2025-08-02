@@ -8,7 +8,7 @@ export default function Step2Page() {
   const router = useRouter();
 
   const handleNext = () => {
-    router.push("/register/success");
+    router.push("/register/success?from=kk");
   };
 
   const handleBack = () => {

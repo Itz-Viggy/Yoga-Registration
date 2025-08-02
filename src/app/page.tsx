@@ -72,7 +72,7 @@ export default function HomePage() {
               </p>
               <p className="mt-2">
                 <a
-                  href="https://chat.whatsapp.com/HYePf24x6Qx9NCORBCoWeO"
+                  href="https://chat.whatsapp.com/J5OIjjgjVES7DWqoYvaqBf?mode=ac_t"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 font-bold underline hover:opacity-80"
