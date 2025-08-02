@@ -15,7 +15,7 @@ function SuccessContent() {
     
     const timeoutId = setTimeout(() => {
       router.push("/");
-    }, 5000); // Increased to 5 seconds to give time to read the links
+    }, 15000); // Increased to 15 seconds to give time to read the links
 
     return () => clearTimeout(timeoutId);
   }, [router, searchParams]);
