@@ -64,7 +64,8 @@ export default function HomePage() {
                 Where: <span className="font-semibold">Zoom</span>
               </p>
               <p className="text-black">
-                Time: <span className="font-semibold">Saturday (8 - 9:15 AM) EST</span>
+                Time: <span className="font-semibold">Wednesday (6:30 - 7:30 PM) EST or
+                <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday (8 - 9:15 AM) EST</span>
               </p>
               <p className="text-black mt-2">
               <span className="font-semibold">No Course Fees</span>
