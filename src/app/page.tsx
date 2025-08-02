@@ -58,7 +58,7 @@ export default function HomePage() {
                 Women's Physical Exercise (PE)
               </p>
               <p className="text-black">
-                When: <span className="font-semibold">(July 15 - August 31) 2025</span>
+                When: <span className="font-semibold">(September 15 - October 31) 2025</span>
               </p>
               <p className="text-black">
                 Where: <span className="font-semibold">Zoom</span>
