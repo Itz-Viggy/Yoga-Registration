@@ -85,7 +85,7 @@ export default function HomePage() {
                 className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                 style={{ backgroundColor: "#c49d8b" }}
               >
-                PE Registration/Feedback
+               Proceed to more PE Details
               </button>
             </div>
             {/* Men's PE */}
@@ -125,7 +125,7 @@ export default function HomePage() {
                   className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                   style={{ backgroundColor: "#c49d8b" }}
                 >
-                  PE Registration/Feedback
+                  Proceed to more PE Details
                 </button>
               </div>
             <div className="flex flex-col md:flex-row gap-4 mb-4">
@@ -161,7 +161,7 @@ export default function HomePage() {
                   className="w-full mt-2 py-2 px-4 text-black font-bold rounded-full hover:opacity-90 transition-colors text-lg md:text-xl"
                   style={{ backgroundColor: "#c49d8b" }}
                 >
-                  KK Registration/Feedback
+                  Proceed to more KK Details
                 </button>
               </div>
 
