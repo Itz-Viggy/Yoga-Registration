@@ -59,14 +59,9 @@ export default function HomePage() {
         "We completed 10 Batches, around 500 students learned physical exercises with our online group",
         "We have 4 masters and 10 volunteers to run this online group class",
         "The group count is usually around 20-25 students in each class",
-
-
-        "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day",
-        "You can interact with Masters and Volunteers at the end of the class to calrify questions",
         "SKY experienced Masters and Volunteers are running the class",
-        "Please do your practices on the Mat",
-        "Please turn on the video during online classes, Masters will correct your practices",
-        "We will send Zoom class reminders one day before the class"
+        "You can interact with Masters and Volunteers at the end of the class to clarify questions",
+        "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day"
       ].map((item) => (
         <li key={item} className="flex items-start">
           <span className="mr-2 text-2xl lg:text-3xl">●</span>
