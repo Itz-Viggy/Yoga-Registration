@@ -55,7 +55,7 @@ export default function HomePage() {
 
             <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
               <p className="mb-2 text-lg md:text-xl font-bold text-black">
-                Women's Physical Exercise (PE)
+                Women's Physical Exercise (PE):
               </p>
               <p className="text-black">
                 When: <span className="font-semibold">(Sep 15 - Oct 31) 2025</span>
@@ -64,7 +64,7 @@ export default function HomePage() {
                 Where: <span className="font-semibold">Zoom</span>
               </p>
               <p className="text-black">
-                Time: <span className="font-semibold">Wednesday (6:30 - 7:30 PM) EST or
+                Time: <span className="font-semibold">Wednesday (6:30 - 7:30 PM) EST (or)
                 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday (8 - 9:15 AM) EST</span>
               </p>
               <p className="text-black mt-2">
@@ -92,7 +92,7 @@ export default function HomePage() {
             {/* Men's PE */}
             <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
                 <p className="mb-2 text-lg md:text-xl font-bold text-black">
-                  Men's Physical Exercise (PE)
+                  Men's Physical Exercise (PE):
                 </p>
                 <p className="text-black">
                   When: <span className="font-semibold">TBD</span>
@@ -133,7 +133,7 @@ export default function HomePage() {
               {/* Kayakalpa */}
               <div className="flex-1 p-3 rounded-lg text-left border" style={{ backgroundColor: "#f4ebe8", borderColor: "#a57d6b" }}>
                 <p className="mb-2 text-lg md:text-xl font-bold text-black">
-                  Women's Kayakalpa Practices (KK)
+                  Women's Kayakalpa Practices (KK):
                 </p>
                 <p className="text-black">
                   When: <span className="font-semibold">November 2025</span>
