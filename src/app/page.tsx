@@ -95,7 +95,7 @@ export default function HomePage() {
                   Men's Physical Exercise (PE):
                 </p>
                 <p className="text-black">
-                  When: <span className="font-semibold">TBD</span>
+                  When: <span className="font-semibold">(Sep 15 - Oct 31) 2025</span>
                 </p>
                 <p className="text-black">
                   Where: <span className="font-semibold">Zoom</span>
