@@ -60,7 +60,6 @@ export default function HomePage() {
         "We have 4 masters and 10 volunteers to run this online group class",
         "The group count is usually around 20-25 students in each class",
         "SKY experienced Masters and Volunteers are running the class",
-        "You can interact with Masters and Volunteers at the end of the class to clarify questions",
         "In Women's batch we teach same exercises on both Wednesday and Saturday, you can choose any one day"
       ].map((item) => (
         <li key={item} className="flex items-start">
