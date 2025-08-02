@@ -121,6 +121,71 @@ export default function HomePage() {
           </section>
         </div>
 
+        {/* Things to Remember Section */}
+        <section className="w-full p-6 md:p-12">
+          <div className="border rounded-xl p-6" style={{ borderColor: "#a57d6b", backgroundColor: "#f4ebe8" }}>
+            <h4 className="text-2xl md:text-4xl font-extrabold text-black mb-4">
+              Things to Remember before class:
+            </h4>
+            <ul className="space-y-3 text-black text-lg md:text-xl lg:text-2xl">
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>Zoom Name:</strong> Please have the registered class name as Zoom name when you attend zoom class
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>On the Video:</strong> This is ladies only group please feel free to on the video to correct your practices.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>Mat:</strong> Please keep mat or any sheet for practices. Don't do it on floor or carpet.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>Practice time:</strong> Please do the practices before breakfast or after 2-3 hours when you eat your meal.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>Place:</strong> Please do the practices under roof not open area.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>Skip practices:</strong> Please skip practices during 3-4 days of the Monthly cycle or when you are sick. You can attend the class and listen when you have a monthly cycle.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>No device:</strong> Please don't use glasses(while practicing alone) or head phone any external devices touching body during practices. This may block body heat, air, blood flow during practices.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>Dress code:</strong> Wear comfort dresses during practice.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-2xl">●</span>
+                <div>
+                  <strong>Q & A:</strong> Feel free to ask doubts to masters if you have any specific health conditions before class
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         {/* Bottom Row: Daily Practice and Benefits */}
         <section className="w-full p-6 md:p-12 overflow-auto">
           
