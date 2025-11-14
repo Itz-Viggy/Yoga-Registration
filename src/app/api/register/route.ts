@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
     
     await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: "May 2025!A2:C", 
+      range: "KK Registration!A2:C", 
       valueInputOption: "USER_ENTERED",
       requestBody: {
         values: [[firstname, lastname, state, `'${code} ${phone}`]],

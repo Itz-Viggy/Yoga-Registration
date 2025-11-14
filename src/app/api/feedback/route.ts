@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
     // 4. Append the feedback data to your "Feedback" sheet, columns A–E, starting at row 2
     await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: "May Feedback!A2:E",
+      range: "KK FEedback!A2:E",
       valueInputOption: "USER_ENTERED",
       requestBody: {
         values: [[name, likedBest, improvements, rating, suggestions]],
