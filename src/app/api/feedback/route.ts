@@ -8,6 +8,17 @@ export async function POST(req: NextRequest) {
     // 1. Parse the incoming feedback fields
     const { name, likedBest, improvements, rating, suggestions } = await req.json();
 
+    // Generate current date/time in a readable format
+    const submissionDate = new Date().toLocaleString('en-US', {
+      timeZone: 'America/New_York',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+
     // 2. Authenticate using your service account credentials
     const auth = new google.auth.GoogleAuth({
       credentials: {
@@ -21,13 +32,13 @@ export async function POST(req: NextRequest) {
     const sheets = google.sheets({ version: "v4", auth });
     const spreadsheetId = process.env.GOOGLE_SHEET_ID!;
 
-    // 4. Append the feedback data to your "Feedback" sheet, columns A–E, starting at row 2
+    // 4. Append the feedback data to your "Feedback" sheet, columns A–F, starting at row 2
     await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: "KK FEedback!A2:E",
+      range: "KK FEedback!A2:F",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[name, likedBest, improvements, rating, suggestions]],
+        values: [[submissionDate, name, likedBest, improvements, rating, suggestions]],
       },
     });
 
