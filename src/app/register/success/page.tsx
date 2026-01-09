@@ -56,25 +56,8 @@ function SuccessContent() {
           
           {source === 'pe' && (
             <div className="space-y-4">
-              <p className="text-black font-semibold">Please join the appropriate WhatsApp group for updates:</p>
-              <div className="space-y-2">
-                <a
-                  href="https://chat.whatsapp.com/J5OIjjgjVES7DWqoYvaqBf?mode=ac_t"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-blue-600 font-bold underline hover:opacity-80"
-                >
-                  Women's WhatsApp Group
-                </a>
-                <a
-                  href="https://chat.whatsapp.com/IIiAtsct22FCOm7tJomBku"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-blue-600 font-bold underline hover:opacity-80"
-                >
-                  Men's WhatsApp Group
-                </a>
-              </div>
+              <p className="text-black font-semibold">Please join the Women's and Men's WhatsApp group for further updates:</p>
+              
             </div>
           )}
           
