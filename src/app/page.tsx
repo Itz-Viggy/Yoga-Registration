@@ -69,15 +69,8 @@ export default function HomePage() {
               <span className="font-semibold">No Course Fees</span>
                 <span className="font-semibold">**Run by SKY Masters and Volunteers**</span>
               </p>
-              <p className="mt-2">
-                <a
-                  href="https://chat.whatsapp.com/J5OIjjgjVES7DWqoYvaqBf?mode=ac_t"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 font-bold underline hover:opacity-80"
-                >
-                  Please join Women's WhatsApp Group
-                </a>
+              <p className="mt-2 text-black text-center" >
+                Please Contact: Meena Purvi for whatsapp group link at +1 (704)-488-0552
               </p>
               <button
                 onClick={handlePEClick}
