@@ -70,7 +70,7 @@ export default function HomePage() {
                 <span className="font-semibold">**Run by SKY Masters and Volunteers**</span>
               </p>
               <p className="mt-2 text-black text-center" >
-                Please Contact: Meena Purvi for whatsapp group link at +1 (704)-488-0552
+                Please Contact: Meena Puvi for whatsapp group link at +1 (704)-488-0552
               </p>
               <button
                 onClick={handlePEClick}
